@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D8D03D1564A8E6B0D9D1C1 /* StreakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE02A7090D7FDC1A5568F5 /* StreakManager.swift */; };
+		38E6B59D9DDAE9EC0CC9E427 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1789B8973C5EB51DF7F27180 /* CreateView.swift */; };
+		417C1589725C01EA443F326A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856326EE287CBE9C79E87FC4 /* NotificationManager.swift */; };
+		441C94BC1094EE7AAD55ACAD /* UserStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC08BB9076A9F8390F0845F /* UserStats.swift */; };
+		46A446DB20250174983F1E1E /* NotificationSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84F172CFC5D817A68D9910 /* NotificationSetupView.swift */; };
+		4898AB7941F4D514652AFF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC03EE19F1C66B2B74E307E /* Assets.xcassets */; };
+		498B9A215EF2DD9BC1170764 /* AffirmWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9C83098980A31875080AC26F /* AffirmWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49A6D55DEA62FA7C513D1972 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E50A9FECB2A276C6E93257 /* MoodEntry.swift */; };
+		4D982AAA581819846EFA5B4E /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9AACE2A1503F7C2AC4CB5 /* Color+Hex.swift */; };
+		4F35EF8CFD8C426BCD60F5AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF2F93364FFEB7FC0C7110 /* ContentView.swift */; };
+		550FB9E70B4DA523746DE418 /* MeshGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A0066883A6FEA611EFDC /* MeshGradientBackground.swift */; };
+		5A9E2D4F1835E7615B0486F6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3B311725E22C1A06CE68AC /* MainTabView.swift */; };
+		5B38838F78CB1F8801A41CCB /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CDFDF1B8AF108AC650F12 /* JournalEntry.swift */; };
+		6E757AECEC33058342D17A35 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795AE07D65FBEE60DC052B57 /* SettingsView.swift */; };
+		F00DBABE0000000000000002 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DBABE0000000000000001 /* SubscriptionManager.swift */; };
+		F00DBABE0000000000000004 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00DBABE0000000000000003 /* PaywallView.swift */; };
+		6F83F9E452E1AF2978506005 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F6916DAD5D3273F069EDCF /* Category.swift */; };
+		7C4E405F9085CE7639D3C3EA /* AffirmWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7E386725C5AE8E59EA62A /* AffirmWidget.swift */; };
+		8256144814FBA0888C8B9EB2 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D333C4203B330C1C5C053C /* CategorySelectionView.swift */; };
+		84274A9EA761584E46300631 /* AppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B2E7BC92AF486A5A64D5 /* AppIntents.swift */; };
+		A7A84EFC14550FFD0C592464 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D0044E0B251ECB4C3F720 /* OnboardingView.swift */; };
+		A970B1E8679C230175471514 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E400E1A857A31D6EE23263 /* HomeView.swift */; };
+		AD3711D0E335BD2CE377E41D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BB56244146C86E1CF60977 /* StatsView.swift */; };
+		B99DE6AC5FBA82ACF710A884 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B7A2F4B3A9A1AA6C97F80 /* JournalView.swift */; };
+		BCDDFA3CCA496E09F490E0BA /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EF1570C5D9B49914F84007 /* CategoriesView.swift */; };
+		D882A8C59848F40B9F0C7E81 /* AffirmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33A3E08E3847747A33EDC9 /* AffirmApp.swift */; };
+		D9991401F27A43A6C689D9EC /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CAC699B873205001F1A15D /* Affirmation.swift */; };
+		DAF96A101A4F5049F5B1F191 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C13AD699D29C27DF5E247 /* FavoritesView.swift */; };
+		DF71EA1B5FD92A811F08F5F6 /* AffirmationSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF234B0ACBB6B4D1432F4927 /* AffirmationSeeder.swift */; };
+		E18194762FC5885E92E6AD6E /* DailyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CC55947E5885A073E00F8 /* DailyLog.swift */; };
+		E8630B46385AF6691F74DF19 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670E2832A405F0482972E95 /* SpeechManager.swift */; };
+		FA8F59CEFA6B579E7015B8B2 /* AffirmationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE014178C70C1523CD078DE1 /* AffirmationCard.swift */; };
+		FC0D1D0F40AFCBFD84951A7E /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F731F6FC701C1D66A021F /* DesignSystem.swift */; };
+		ICLOUD01234567890ABCDEF1 /* iCloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ICLOUD01234567890ABCDEF2 /* iCloudSyncManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5857658A2D54D378B4A341CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDE8E0284367FD81275F447 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 227B779D7F478CD8E5D12587;
+			remoteInfo = AffirmWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27E50D920C7FD9E53D92065D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				498B9A215EF2DD9BC1170764 /* AffirmWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1789B8973C5EB51DF7F27180 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		1E33A3E08E3847747A33EDC9 /* AffirmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmApp.swift; sourceTree = "<group>"; };
+		27F6916DAD5D3273F069EDCF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2EEE02A7090D7FDC1A5568F5 /* StreakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakManager.swift; sourceTree = "<group>"; };
+		F00DBABE0000000000000001 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		F00DBABE0000000000000003 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		3100EF75FCC9D762C2888F31 /* Affirm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affirm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3376B2E7BC92AF486A5A64D5 /* AppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntents.swift; sourceTree = "<group>"; };
+		36E400E1A857A31D6EE23263 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3E84F172CFC5D817A68D9910 /* NotificationSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSetupView.swift; sourceTree = "<group>"; };
+		4130BD80C72D8672070B067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		44BF2F93364FFEB7FC0C7110 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50C9AACE2A1503F7C2AC4CB5 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		521CC55947E5885A073E00F8 /* DailyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLog.swift; sourceTree = "<group>"; };
+		5FC03EE19F1C66B2B74E307E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61E50A9FECB2A276C6E93257 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		6C8D0044E0B251ECB4C3F720 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		795AE07D65FBEE60DC052B57 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		82CAC699B873205001F1A15D /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		856326EE287CBE9C79E87FC4 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		8670E2832A405F0482972E95 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		8F3B311725E22C1A06CE68AC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		933CDFDF1B8AF108AC650F12 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		99A7E386725C5AE8E59EA62A /* AffirmWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmWidget.swift; sourceTree = "<group>"; };
+		99EF1570C5D9B49914F84007 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		9C83098980A31875080AC26F /* AffirmWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AffirmWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82C13AD699D29C27DF5E247 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		BF3F731F6FC701C1D66A021F /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		C6BB56244146C86E1CF60977 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		CF234B0ACBB6B4D1432F4927 /* AffirmationSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationSeeder.swift; sourceTree = "<group>"; };
+		CFC08BB9076A9F8390F0845F /* UserStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStats.swift; sourceTree = "<group>"; };
+		D59B7A2F4B3A9A1AA6C97F80 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		DE014178C70C1523CD078DE1 /* AffirmationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationCard.swift; sourceTree = "<group>"; };
+		E353A0066883A6FEA611EFDC /* MeshGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientBackground.swift; sourceTree = "<group>"; };
+		E8D333C4203B330C1C5C053C /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
+		ICLOUD01234567890ABCDEF2 /* iCloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+			11672DD745677159EA5751AA /* Services */ = {
+				isa = PBXGroup;
+				children = (
+					CF234B0ACBB6B4D1432F4927 /* AffirmationSeeder.swift */,
+					3376B2E7BC92AF486A5A64D5 /* AppIntents.swift */,
+					ICLOUD01234567890ABCDEF2 /* iCloudSyncManager.swift */,
+					856326EE287CBE9C79E87FC4 /* NotificationManager.swift */,
+					8670E2832A405F0482972E95 /* SpeechManager.swift */,
+					2EEE02A7090D7FDC1A5568F5 /* StreakManager.swift */,
+					F00DBABE0000000000000001 /* SubscriptionManager.swift */,
+				);
+				path = Services;
+				sourceTree = "<group>";
+			};
+		372D9A34A31160BFEEE7C5DC /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB56244146C86E1CF60977 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		43CB6052C4F013633252D868 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE014178C70C1523CD078DE1 /* AffirmationCard.swift */,
+				E353A0066883A6FEA611EFDC /* MeshGradientBackground.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B70D5402D74645B7C920035 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				99EF1570C5D9B49914F84007 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		73181A4F65FF7150EDDFD7C3 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				A82C13AD699D29C27DF5E247 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		750B1CDCE6181BEFB0E03B66 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				36E400E1A857A31D6EE23263 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7CA87FA3D503474620B7EE52 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E8D333C4203B330C1C5C053C /* CategorySelectionView.swift */,
+				3E84F172CFC5D817A68D9910 /* NotificationSetupView.swift */,
+				6C8D0044E0B251ECB4C3F720 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7CFAD3C7C2D27CD038A2EC44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3100EF75FCC9D762C2888F31 /* Affirm.app */,
+				9C83098980A31875080AC26F /* AffirmWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F3C679E9EB40119ADB4EC6 /* Affirm */ = {
+			isa = PBXGroup;
+			children = (
+				1E33A3E08E3847747A33EDC9 /* AffirmApp.swift */,
+				5FC03EE19F1C66B2B74E307E /* Assets.xcassets */,
+				44BF2F93364FFEB7FC0C7110 /* ContentView.swift */,
+				A76918D8085B3CC68D93EB65 /* Extensions */,
+				BF8DCC9835A7D15DC0FFBD9B /* Models */,
+				11672DD745677159EA5751AA /* Services */,
+				ADFBC437E13A04BCC7208829 /* Views */,
+			);
+			path = Affirm;
+			sourceTree = "<group>";
+		};
+		96B2BE810E7198F080B33981 /* AffirmWidget */ = {
+			isa = PBXGroup;
+			children = (
+				99A7E386725C5AE8E59EA62A /* AffirmWidget.swift */,
+				4130BD80C72D8672070B067E /* Info.plist */,
+			);
+			path = AffirmWidget;
+			sourceTree = "<group>";
+		};
+		9FFBBC35B0D6D1822E401173 = {
+			isa = PBXGroup;
+			children = (
+				84F3C679E9EB40119ADB4EC6 /* Affirm */,
+				96B2BE810E7198F080B33981 /* AffirmWidget */,
+				7CFAD3C7C2D27CD038A2EC44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76918D8085B3CC68D93EB65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50C9AACE2A1503F7C2AC4CB5 /* Color+Hex.swift */,
+				BF3F731F6FC701C1D66A021F /* DesignSystem.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADFBC437E13A04BCC7208829 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F3B311725E22C1A06CE68AC /* MainTabView.swift */,
+				5B70D5402D74645B7C920035 /* Categories */,
+				43CB6052C4F013633252D868 /* Components */,
+				E1E90B81FC9DD4C72B077224 /* Create */,
+				73181A4F65FF7150EDDFD7C3 /* Favorites */,
+				750B1CDCE6181BEFB0E03B66 /* Home */,
+				E9398CA24135434C7F643F90 /* Journal */,
+				7CA87FA3D503474620B7EE52 /* Onboarding */,
+				E3B05F00F3BE2697AE3B0886 /* Settings */,
+				372D9A34A31160BFEEE7C5DC /* Stats */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF8DCC9835A7D15DC0FFBD9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82CAC699B873205001F1A15D /* Affirmation.swift */,
+				27F6916DAD5D3273F069EDCF /* Category.swift */,
+				521CC55947E5885A073E00F8 /* DailyLog.swift */,
+				933CDFDF1B8AF108AC650F12 /* JournalEntry.swift */,
+				61E50A9FECB2A276C6E93257 /* MoodEntry.swift */,
+				CFC08BB9076A9F8390F0845F /* UserStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1E90B81FC9DD4C72B077224 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				1789B8973C5EB51DF7F27180 /* CreateView.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+			E3B05F00F3BE2697AE3B0886 /* Settings */ = {
+				isa = PBXGroup;
+				children = (
+					795AE07D65FBEE60DC052B57 /* SettingsView.swift */,
+					F00DBABE0000000000000003 /* PaywallView.swift */,
+				);
+				path = Settings;
+				sourceTree = "<group>";
+			};
+		E9398CA24135434C7F643F90 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				D59B7A2F4B3A9A1AA6C97F80 /* JournalView.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		227B779D7F478CD8E5D12587 /* AffirmWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241A5C6A06EE5498887B21FA /* Build configuration list for PBXNativeTarget "AffirmWidgetExtension" */;
+			buildPhases = (
+				5A9CBEF643150FC5C593FFBD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AffirmWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = AffirmWidgetExtension;
+			productReference = 9C83098980A31875080AC26F /* AffirmWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B3FEFFD3DCD6B03C276484D6 /* Affirm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CF327438AB45DE9CB1FCD3 /* Build configuration list for PBXNativeTarget "Affirm" */;
+			buildPhases = (
+				BE1ED5878A1B8B8687BFCD43 /* Sources */,
+				25436D02D81CFE279405936D /* Resources */,
+				27E50D920C7FD9E53D92065D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F0347FB8654E0E60E6F37E /* PBXTargetDependency */,
+			);
+			name = Affirm;
+			packageProductDependencies = (
+			);
+			productName = Affirm;
+			productReference = 3100EF75FCC9D762C2888F31 /* Affirm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBDE8E0284367FD81275F447 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					227B779D7F478CD8E5D12587 = {
+						DevelopmentTeam = 672RKF28YZ;
+						ProvisioningStyle = Automatic;
+					};
+					B3FEFFD3DCD6B03C276484D6 = {
+						DevelopmentTeam = 672RKF28YZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8455DD517F3CF9A23AE2EE02 /* Build configuration list for PBXProject "Affirm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9FFBBC35B0D6D1822E401173;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FEFFD3DCD6B03C276484D6 /* Affirm */,
+				227B779D7F478CD8E5D12587 /* AffirmWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25436D02D81CFE279405936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4898AB7941F4D514652AFF58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A9CBEF643150FC5C593FFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4E405F9085CE7639D3C3EA /* AffirmWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1ED5878A1B8B8687BFCD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D882A8C59848F40B9F0C7E81 /* AffirmApp.swift in Sources */,
+				D9991401F27A43A6C689D9EC /* Affirmation.swift in Sources */,
+				FA8F59CEFA6B579E7015B8B2 /* AffirmationCard.swift in Sources */,
+				DF71EA1B5FD92A811F08F5F6 /* AffirmationSeeder.swift in Sources */,
+				84274A9EA761584E46300631 /* AppIntents.swift in Sources */,
+				BCDDFA3CCA496E09F490E0BA /* CategoriesView.swift in Sources */,
+				6F83F9E452E1AF2978506005 /* Category.swift in Sources */,
+				8256144814FBA0888C8B9EB2 /* CategorySelectionView.swift in Sources */,
+				4D982AAA581819846EFA5B4E /* Color+Hex.swift in Sources */,
+				4F35EF8CFD8C426BCD60F5AC /* ContentView.swift in Sources */,
+				38E6B59D9DDAE9EC0CC9E427 /* CreateView.swift in Sources */,
+				E18194762FC5885E92E6AD6E /* DailyLog.swift in Sources */,
+				FC0D1D0F40AFCBFD84951A7E /* DesignSystem.swift in Sources */,
+				DAF96A101A4F5049F5B1F191 /* FavoritesView.swift in Sources */,
+				A970B1E8679C230175471514 /* HomeView.swift in Sources */,
+				5B38838F78CB1F8801A41CCB /* JournalEntry.swift in Sources */,
+				B99DE6AC5FBA82ACF710A884 /* JournalView.swift in Sources */,
+				5A9E2D4F1835E7615B0486F6 /* MainTabView.swift in Sources */,
+				550FB9E70B4DA523746DE418 /* MeshGradientBackground.swift in Sources */,
+				49A6D55DEA62FA7C513D1972 /* MoodEntry.swift in Sources */,
+				417C1589725C01EA443F326A /* NotificationManager.swift in Sources */,
+				46A446DB20250174983F1E1E /* NotificationSetupView.swift in Sources */,
+					A7A84EFC14550FFD0C592464 /* OnboardingView.swift in Sources */,
+					6E757AECEC33058342D17A35 /* SettingsView.swift in Sources */,
+					F00DBABE0000000000000004 /* PaywallView.swift in Sources */,
+					E8630B46385AF6691F74DF19 /* SpeechManager.swift in Sources */,
+					ICLOUD01234567890ABCDEF1 /* iCloudSyncManager.swift in Sources */,
+					AD3711D0E335BD2CE377E41D /* StatsView.swift in Sources */,
+					09D8D03D1564A8E6B0D9D1C1 /* StreakManager.swift in Sources */,
+					F00DBABE0000000000000002 /* SubscriptionManager.swift in Sources */,
+					441C94BC1094EE7AAD55ACAD /* UserStats.swift in Sources */,
+				);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94F0347FB8654E0E60E6F37E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 227B779D7F478CD8E5D12587 /* AffirmWidgetExtension */;
+			targetProxy = 5857658A2D54D378B4A341CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		287A0E0A805DBAC9F084B8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 672RKF28YZ;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Adam Doherty - All Rights Reserved.";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BB4137D9E04E6E3F682B6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Affirm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Affirm would like to send you daily affirmation reminders.";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caserlegal.Affirm;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31FD44BE1DB125B4E668F1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 672RKF28YZ;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Adam Doherty - All Rights Reserved.";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64A981BB9409566222157B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Affirm";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caserlegal.Affirm.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B69FF9EED2759576C69699B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Affirm;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSUserNotificationsUsageDescription = "Affirm would like to send you daily affirmation reminders.";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caserlegal.Affirm;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F4D7F6ADF4FF7E4C3F3A834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Affirm";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = caserlegal.Affirm.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		241A5C6A06EE5498887B21FA /* Build configuration list for PBXNativeTarget "AffirmWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F4D7F6ADF4FF7E4C3F3A834 /* Debug */,
+				64A981BB9409566222157B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8455DD517F3CF9A23AE2EE02 /* Build configuration list for PBXProject "Affirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FD44BE1DB125B4E668F1F2 /* Debug */,
+				287A0E0A805DBAC9F084B8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		95CF327438AB45DE9CB1FCD3 /* Build configuration list for PBXNativeTarget "Affirm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B69FF9EED2759576C69699B /* Debug */,
+				2BB4137D9E04E6E3F682B6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBDE8E0284367FD81275F447 /* Project object */;
+}
