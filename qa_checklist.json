@@ -1,0 +1,317 @@
+[
+  {
+    "id": "sub_manager_exists",
+    "category": "subscription",
+    "description": "SubscriptionManager.swift exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_singleton",
+    "category": "subscription",
+    "description": "SubscriptionManager has static shared instance",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_ispro",
+    "category": "subscription",
+    "description": "SubscriptionManager has isPro computed property",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_products",
+    "category": "subscription",
+    "description": "SubscriptionManager has weekly/monthly product IDs",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_purchase",
+    "category": "subscription",
+    "description": "SubscriptionManager has purchase() function",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_restore",
+    "category": "subscription",
+    "description": "SubscriptionManager has restorePurchases() function",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "sub_manager_trial",
+    "category": "subscription",
+    "description": "SubscriptionManager has trial eligibility check",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_exists",
+    "category": "subscription",
+    "description": "PaywallView.swift exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_header",
+    "category": "subscription",
+    "description": "PaywallView has header with app icon and title",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_features",
+    "category": "subscription",
+    "description": "PaywallView has features section (5 FeatureRows)",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_products",
+    "category": "subscription",
+    "description": "PaywallView shows product cards with prices",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_best_value",
+    "category": "subscription",
+    "description": "PaywallView has BEST VALUE badge on monthly",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_trial_text",
+    "category": "subscription",
+    "description": "PaywallView shows trial text when eligible",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_subscribe_btn",
+    "category": "subscription",
+    "description": "PaywallView has Subscribe/Start Trial button",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_legal",
+    "category": "subscription",
+    "description": "PaywallView has Terms and Privacy links",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "paywall_restore",
+    "category": "subscription",
+    "description": "PaywallView has Restore Purchases button",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "main_screen_upgrade_banner",
+    "category": "settings",
+    "description": "Main screen has 'Upgrade to Pro' banner at TOP",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "settings_upgrade_btn",
+    "category": "settings",
+    "description": "Settings has 'Upgrade to Pro' button as FIRST section",
+    "verified": false,
+    "notes": "Settings view not found"
+  },
+  {
+    "id": "settings_upgrade_gold",
+    "category": "settings",
+    "description": "Upgrade button uses gold color/styling",
+    "verified": false,
+    "notes": "Settings view not found"
+  },
+  {
+    "id": "settings_upgrade_sheet",
+    "category": "settings",
+    "description": "Upgrade button opens PaywallView sheet",
+    "verified": false,
+    "notes": "Settings view not found"
+  },
+  {
+    "id": "settings_pro_state",
+    "category": "settings",
+    "description": "Settings shows 'Pro Active' when subscribed",
+    "verified": false,
+    "notes": "Settings view not found"
+  },
+  {
+    "id": "feature_gating_exists",
+    "category": "gating",
+    "description": "At least one isPro check exists in app",
+    "verified": true,
+    "notes": "Found isPro checks"
+  },
+  {
+    "id": "feature_gating_overlay",
+    "category": "gating",
+    "description": "Pro features gated (overlay or conditional)",
+    "verified": true,
+    "notes": "Found gating pattern"
+  },
+  {
+    "id": "paywall_features_match",
+    "category": "gating",
+    "description": "Paywall features match actual gated features",
+    "verified": true,
+    "notes": "Free limit is 3 and features verified"
+  },
+  {
+    "id": "settings_theme",
+    "category": "settings",
+    "description": "Theme selection (Light/Dark/Auto) exists",
+    "verified": false,
+    "notes": "MISSING - implement this setting"
+  },
+  {
+    "id": "settings_notifications",
+    "category": "settings",
+    "description": "Notification preferences section exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "settings_privacy",
+    "category": "settings",
+    "description": "Privacy section with Face ID toggle exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "settings_export",
+    "category": "settings",
+    "description": "Export data option exists",
+    "verified": false,
+    "notes": "MISSING - implement this setting"
+  },
+  {
+    "id": "settings_clear",
+    "category": "settings",
+    "description": "Clear all data with confirmation exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "settings_about",
+    "category": "settings",
+    "description": "About section with version exists",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "info_plist_encryption",
+    "category": "compliance",
+    "description": "ITSAppUsesNonExemptEncryption = false in Info.plist",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "info_plist_privacy",
+    "category": "compliance",
+    "description": "Privacy usage descriptions in Info.plist",
+    "verified": true,
+    "notes": "Found or not needed"
+  },
+  {
+    "id": "code_signing",
+    "category": "compliance",
+    "description": "Code signing enabled (not disabled)",
+    "verified": true,
+    "notes": "Enabled"
+  },
+  {
+    "id": "app_icon_no_alpha",
+    "category": "compliance",
+    "description": "App icon has no alpha channel",
+    "verified": true,
+    "notes": "Assumed OK - verify manually if icon missing"
+  },
+  {
+    "id": "bundle_id_correct",
+    "category": "compliance",
+    "description": "Bundle ID uses caserlegal.* format",
+    "verified": true,
+    "notes": "Uses caserlegal.*"
+  },
+  {
+    "id": "storekit_capability",
+    "category": "compliance",
+    "description": "In-App Purchase capability added",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "touch_targets",
+    "category": "ui",
+    "description": "All buttons have 44pt minimum touch targets",
+    "verified": true,
+    "notes": "Found 44pt frames or Touch.min"
+  },
+  {
+    "id": "accessibility_labels",
+    "category": "ui",
+    "description": "Icon buttons have accessibility labels",
+    "verified": true,
+    "notes": "Found"
+  },
+  {
+    "id": "color_contrast",
+    "category": "ui",
+    "description": "No hardcoded white/black text (uses .primary or colorScheme)",
+    "verified": true,
+    "notes": "Uses adaptive colors or white on colored backgrounds (OK)"
+  },
+  {
+    "id": "settings_background",
+    "category": "ui",
+    "description": "Settings uses system background colors",
+    "verified": true,
+    "notes": "Uses system colors"
+  },
+  {
+    "id": "onboarding_skip",
+    "category": "ui",
+    "description": "Onboarding skip button in top-right",
+    "verified": true,
+    "notes": "Found or no onboarding"
+  },
+  {
+    "id": "app_launches",
+    "category": "runtime",
+    "description": "App launches without crashing",
+    "verified": false,
+    "notes": "NEEDS RUNTIME CHECK - agent must verify"
+  },
+  {
+    "id": "app_runs_5s",
+    "category": "runtime",
+    "description": "App runs for 5+ seconds without crash",
+    "verified": false,
+    "notes": "NEEDS RUNTIME CHECK - agent must verify"
+  },
+  {
+    "id": "build_succeeds",
+    "category": "build",
+    "description": "Build succeeds with 0 errors",
+    "verified": false,
+    "notes": "NEEDS BUILD CHECK - agent must verify"
+  },
+  {
+    "id": "no_warnings",
+    "category": "build",
+    "description": "Build has 0 warnings",
+    "verified": false,
+    "notes": "NEEDS BUILD CHECK - agent must verify"
+  }
+]

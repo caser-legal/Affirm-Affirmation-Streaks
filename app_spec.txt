@@ -1,0 +1,182 @@
+<project_specification>
+  <project_name>Affirm · A native iOS SwiftUI app that delivers daily positive affirm</project_name>
+
+  <overview>
+    A native iOS SwiftUI app that delivers daily positive affirmations through beautifully designed, swipeable cards. - 🃏 Swipeable card deck with 3D rotation animations - ❤️ Save favorite affirmations
+  </overview>
+
+  <technology_stack>
+    <platform>iOS 17+ (iPhone and iPad friendly, supports Dynamic Type)</platform>
+    <language>Swift 5.9</language>
+    <ui_framework>SwiftUI with Scenes + App lifecycle in Affirm</ui_framework>
+    <state>ObservableObject/Bindable models with AppStorage/UserDefaults persistence</state>
+    <animations>SwiftUI animations inspired by the icon’s pacing and gradients</animations>
+  </technology_stack>
+
+  <core_features>
+    <functionality>
+      - 🃏 Swipeable card deck with 3D rotation animations
+      - ❤️ Save favorite affirmations
+      - 📂 8 categories: Self-Love, Confidence, Gratitude, Success, Health, Relationships, Morning, Evening
+      - ✏️ Create custom affirmations
+    </functionality>
+    <personalization>
+      - Respect the app icon’s palette and typography hints; provide theme/intensity controls where the README suggests customization.
+      - Surface any onboarding or guidance noted in the documentation to help first-time users.
+    </personalization>
+    <accessibility>
+      - Ensure VoiceOver-friendly labels, high contrast variants, 44 pt minimum touch targets, and adherence to the Fibonacci spacing grid specified in the App Reject Checklist.
+    </accessibility>
+  </core_features>
+
+  <ui_layout>
+    <main_structure>
+      - Layout mirrors standard SwiftUI idioms (tabs, cards, stacks) while keeping the navigation chrome minimal and focused on the app’s primary action.
+      - Keep content responsive so that iPhone and iPad versions share a coherent structure, collapsing to single-column on compact width and expanding gracefully on large screens.
+      - Tab/Navigation bar items use SF Symbols that reflect the app’s theme and maintain legibility.
+    </main_structure>
+    <elements>
+      - - Confirm every release meets the items in /Users/home/Documents/iOS/dev-docs/checklists/app-reject-checklist.md (Guidelines 4.0, 3.1.2, 2.1, 2.3.7). Keep this section in sync with the shared checklist after validating layout/usability on the flagged devices, metadata links, Apple Pay, screenshot pricing, and IAP submissions.
+      - - **Theme:** Stacked glowing cards with radiant sunburst
+      - - **Primary Colors:** Warm coral, orange, golden yellow sunburst
+      - - **Background:** Coral to salmon gradient with sparkles
+      - Tab bar and toolbars use frosted glass/ultra-thin materials when appropriate to echo the icon’s depth.
+    </elements>
+  </ui_layout>
+
+  <design_system>
+    <color_palette>
+      - #FF6B6B
+      - #FF8C42
+      - #FFD93D
+      - #FFA07A
+      - #E85D5D
+    </color_palette>
+    <typography>
+      - System font stack (SF Pro Text + Inter fallbacks) with weights ranging from regular for body to semibold/bold for titles so hierarchy matches the app’s tone.
+      - Font sizes follow the [11,14,17,21,27,34,42] scale called out in the prompt instructions and adjust via Dynamic Type.
+    </typography>
+    <components>
+      - Buttons, cards, and controls rely on rounded radii (4/8/13/21) and 44 pt touch zones. Disabled states fade the opacity and disable interactions.
+      - Inputs and overlays use ultra-thin materials or gradients that blend with the app’s background, as noted in the README/design notes.
+    </components>
+    <animations>
+      - Use SwiftUI’s easeInOut and spring timing for transitions, crossfades for content replacement, and optional shimmering effects inspired by the icon.
+    </animations>
+  </design_system>
+
+  <data_models>
+    <state>
+      - Models follow an observable pattern and persist user preferences/data to survive relaunches.
+      - Store business logic (timers, trackers, lists, etc.) in dedicated classes/structs rather than cluttering views.
+    </state>
+  </data_models>
+
+  <key_interactions>
+    <primary_flow>
+      - Users launch the app, encounter the primary screen described above, and interact with the core feature set (timers, trackers, lists, etc.) captured from the README.
+      - Actions provide haptic/visual feedback, and success states are animated using the colors from the palette.
+    </primary_flow>
+    <secondary_flow>
+      - Settings or secondary tabs expose stats, personalization toggles, or informational content (Privacy, Terms, etc.) documented alongside the app.
+    </secondary_flow>
+  </key_interactions>
+
+  <implementation_steps>
+    <step number="1">
+      <title>Foundation</title>
+      <tasks>
+        - Establish the SwiftUI app lifecycle, colors, typography, and general layout structures noted above.
+        - Wire up any data persistence or timer engines referenced in the README.
+      </tasks>
+    </step>
+    <step number="2">
+      <title>Feature Implementation</title>
+      <tasks>
+        - Build out the screens, widgets, or interactions from the README (timers, stat dashboards, galleries, etc.).
+        - Connect controls to the observable state, ensuring data flows are testable and state updates reflect the design.
+      </tasks>
+    </step>
+    <step number="3">
+      <title>Polish & Compliance</title>
+      <tasks>
+        - Apply Fibonacci spacing, check 44 pt touch targets, and document App Reject checklist validation.
+        - Add accessibility metadata, Dynamic Type support, and design refinements to match the icon’s cues.
+      </tasks>
+    </step>
+  </implementation_steps>
+
+  <success_criteria>
+    <functionality>
+      - The core scenario described in the README runs reliably with animations/data persistence intact.
+      - Secondary flows (settings, stats, onboarding) described or implied in documentation are accessible and polished.
+    </functionality>
+    <user_experience>
+      - The interface is visually cohesive, uses the app icon’s palette, and feels intentional rather than simple default controls.
+      - Spacing, typography, and animations follow the provided Fibonacci, typography, and radius systems.
+    </user_experience>
+    <technical_quality>
+      - Code isolates business logic, keeps SwiftUI views declarative, and avoids unused frameworks (PassKit only used when needed per App Reject checklist notes).
+      - Unit/preview coverage exists where helpful (timers, data stores, analytics stubs).
+    </technical_quality>
+    <design_polish>
+      - Buttons, cards, and backgrounds mirror the icon’s glow, include subtle particles or gradients when referenced, and maintain high contrast.
+      - Accessibility options (VoiceOver labels, high contrast, reduced motion toggles) are present or planned based on documentation.
+    </design_polish>
+  </success_criteria>
+</project_specification>
+
+
+---
+
+## iOS 26 LIQUID GLASS DESIGN SYSTEM
+
+This app should follow Apple's iOS 26 Liquid Glass design language (WWDC 2025).
+See `/Users/home/Documents/iOS/dev-docs/guides/design-system.md` for full details.
+
+### Automatic Updates (just build with Xcode 26)
+- Floating glass tab bars and sidebars
+- Glass toolbar items with automatic grouping
+- Controls animate with glass effects
+
+### Navigation Pattern
+Choose based on your app's needs:
+- **TabView** - Great for iPhone-first apps with 3-5 main sections
+- **NavigationSplitView** - Great for iPad/Mac-first or document-based apps
+- **TabView + .sidebarAdaptable** - Universal apps that adapt to device
+
+### Key iOS 26 Modifiers
+```swift
+// Glass effects
+.glassEffect()                           // Apply glass to custom views
+.buttonStyle(.glass)                     // Glass button style
+
+// TabView enhancements
+.tabBarMinimizeBehavior(.onScrollDown)   // Tab bar shrinks on scroll
+.tabViewBottomAccessory { }              // Add view above tab bar
+Tab(..., role: .search)                  // Search tab morphs into field
+
+// NavigationSplitView enhancements
+.backgroundExtensionEffect()             // Content extends under sidebar
+
+// Toolbars
+ToolbarSpacer(.fixed)                    // Group toolbar items
+```
+
+### Required Actions
+1. Build with Xcode 26 (automatic glass appearance)
+2. Remove opaque backgrounds blocking glass effects
+3. Use `.glassEffect()` for custom floating elements
+4. Update app icons with Icon Composer (multi-layer)
+
+### Accessibility
+- VoiceOver support with proper labels
+- Dynamic Type support
+- Minimum 44pt touch targets
+- Reduced motion support
+
+---
+
+
+### Bundle Identifier
+Use `caserlegal.` - Do NOT use `com.` prefix (won't sign).

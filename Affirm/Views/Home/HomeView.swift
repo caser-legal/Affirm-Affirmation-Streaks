@@ -126,11 +126,9 @@ struct HomeView: View {
             }
         }
         .sheet(isPresented: $showStats) {
-        // TODO: Modal needs dismiss path. Add @Environment(\.dismiss) or Button("Done") { showStats = false }
             StatsView()
         }
         .sheet(isPresented: $showPaywall) {
-        // TODO: Modal needs dismiss path. Add @Environment(\.dismiss) or Button("Done") { showPaywall = false }
             PaywallView()
         }
         .onAppear {

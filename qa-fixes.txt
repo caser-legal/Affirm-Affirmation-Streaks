@@ -1,0 +1,39 @@
+# 🔴 QA VERIFICATION FAILURES - YOU MUST FIX ALL OF THESE
+
+These features are either MISSING or INCORRECTLY IMPLEMENTED.
+Do NOT mark the session complete until all are fixed.
+
+Total failures: 10
+
+
+## SETTINGS (6 issues)
+
+- [ ] **Settings has 'Upgrade to Pro' button as FIRST section**
+      Action: Settings view not found
+- [ ] **Upgrade button uses gold color/styling**
+      Action: Settings view not found
+- [ ] **Upgrade button opens PaywallView sheet**
+      Action: Settings view not found
+- [ ] **Settings shows 'Pro Active' when subscribed**
+      Action: Settings view not found
+- [ ] **Theme selection (Light/Dark/Auto) exists**
+      Action: MISSING - implement this setting
+- [ ] **Export data option exists**
+      Action: MISSING - implement this setting
+
+## RUNTIME (2 issues)
+
+- [ ] **App launches without crashing**
+      Action: NEEDS RUNTIME CHECK - agent must verify
+- [ ] **App runs for 5+ seconds without crash**
+      Action: NEEDS RUNTIME CHECK - agent must verify
+
+## BUILD (2 issues)
+
+- [ ] **Build succeeds with 0 errors**
+      Action: NEEDS BUILD CHECK - agent must verify
+- [ ] **Build has 0 warnings**
+      Action: NEEDS BUILD CHECK - agent must verify
+
+---
+Reference: /Users/home/Documents/iOS/dev-docs/checklists/subscription-checklist.txt

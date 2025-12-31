@@ -53,7 +53,6 @@ struct AffirmationCard: View {
         .accessibilityLabel("\(affirmation.text). Category: \(affirmation.category.rawValue)")
         .accessibilityHint("Double tap to favorite. Swipe left or right to see more affirmations.")
         .sheet(isPresented: $showJournal) {
-        // TODO: Modal needs dismiss path. Add @Environment(\.dismiss) or Button("Done") { showJournal = false }
             JournalView(affirmation: affirmation)
         }
     }

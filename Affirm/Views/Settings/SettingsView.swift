@@ -312,7 +312,7 @@ struct SettingsView: View {
                             
                             Divider().padding(.leading, 56)
                             
-                            Link(destination: URL(string: "https://lirix-ai.github.io/github.io/#privacy")!) {
+                            Link(destination: URL(string: "https://apple.caserlegal.com/#privacy")!) {
                                 SettingsActionRow(
                                     icon: "hand.raised.fill",
                                     iconColor: .blue,

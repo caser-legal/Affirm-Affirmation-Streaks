@@ -1,0 +1,3644 @@
+[
+  {
+    "category": "functional",
+    "description": "App launches successfully and displays splash screen",
+    "steps": [
+      "Step 1: Launch the app from home screen",
+      "Step 2: Verify splash screen appears with app logo",
+      "Step 3: Verify app transitions to main content within 1 second"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "First launch shows onboarding flow",
+    "steps": [
+      "Step 1: Fresh install the app",
+      "Step 2: Launch the app",
+      "Step 3: Verify Welcome screen appears first",
+      "Step 4: Verify 'Get Started' button is visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding Welcome screen displays correctly",
+    "steps": [
+      "Step 1: Launch app on first run",
+      "Step 2: Verify app icon/logo animation plays",
+      "Step 3: Verify 'Welcome to Affirm' title is displayed",
+      "Step 4: Verify tagline about daily positivity is shown",
+      "Step 5: Verify 'Get Started' button is tappable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding navigates from Welcome to Category Selection",
+    "steps": [
+      "Step 1: On Welcome screen, tap 'Get Started'",
+      "Step 2: Verify transition animation occurs",
+      "Step 3: Verify Category Selection screen appears",
+      "Step 4: Verify 'Choose your focus areas' title is displayed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category Selection shows all 8 categories",
+    "steps": [
+      "Step 1: Navigate to Category Selection screen",
+      "Step 2: Verify Self-Love category card is visible",
+      "Step 3: Verify Confidence category card is visible",
+      "Step 4: Verify Gratitude category card is visible",
+      "Step 5: Verify Success category card is visible",
+      "Step 6: Verify Health category card is visible",
+      "Step 7: Verify Relationships category card is visible",
+      "Step 8: Verify Morning category card is visible",
+      "Step 9: Verify Evening category card is visible",
+      "Step 10: Verify all 8 categories are displayed in grid layout"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category Selection allows multi-select",
+    "steps": [
+      "Step 1: Navigate to Category Selection screen",
+      "Step 2: Tap Self-Love category",
+      "Step 3: Verify Self-Love shows selected state",
+      "Step 4: Tap Confidence category",
+      "Step 5: Verify both Self-Love and Confidence show selected state",
+      "Step 6: Tap Gratitude category",
+      "Step 7: Verify all three categories show selected state"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category Selection requires minimum 1 selection",
+    "steps": [
+      "Step 1: Navigate to Category Selection screen",
+      "Step 2: Verify Continue button is disabled with no selection",
+      "Step 3: Tap one category",
+      "Step 4: Verify Continue button becomes enabled"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category Selection deselect functionality",
+    "steps": [
+      "Step 1: Navigate to Category Selection screen",
+      "Step 2: Select two categories",
+      "Step 3: Tap first selected category again",
+      "Step 4: Verify first category is deselected",
+      "Step 5: Verify second category remains selected"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding navigates from Category Selection to Notifications",
+    "steps": [
+      "Step 1: On Category Selection, select at least one category",
+      "Step 2: Tap Continue button",
+      "Step 3: Verify Notifications screen appears",
+      "Step 4: Verify 'Stay inspired daily' title is displayed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notifications screen shows time picker",
+    "steps": [
+      "Step 1: Navigate to Notifications screen in onboarding",
+      "Step 2: Verify time picker is displayed",
+      "Step 3: Verify time picker is interactive",
+      "Step 4: Change time selection",
+      "Step 5: Verify new time is reflected"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notifications screen Enable permission flow",
+    "steps": [
+      "Step 1: Navigate to Notifications screen",
+      "Step 2: Tap Enable notifications button",
+      "Step 3: Verify system permission dialog appears",
+      "Step 4: Grant permission",
+      "Step 5: Verify app proceeds to main screen"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notifications screen Skip option works",
+    "steps": [
+      "Step 1: Navigate to Notifications screen",
+      "Step 2: Tap Skip button",
+      "Step 3: Verify app proceeds to main screen without requesting permission"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding completes and shows Home screen",
+    "steps": [
+      "Step 1: Complete all onboarding steps",
+      "Step 2: Tap 'Start Affirming' button",
+      "Step 3: Verify Home screen with card deck appears",
+      "Step 4: Verify tab bar is visible at bottom"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding does not show on subsequent launches",
+    "steps": [
+      "Step 1: Complete onboarding flow",
+      "Step 2: Close app completely",
+      "Step 3: Relaunch app",
+      "Step 4: Verify Home screen appears directly",
+      "Step 5: Verify onboarding is skipped"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Home screen displays stacked card deck",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify front card is fully visible",
+      "Step 3: Verify second card is visible behind (scaled 0.95)",
+      "Step 4: Verify third card is visible behind (scaled 0.9)",
+      "Step 5: Verify stacked offset effect is applied"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Home screen shows affirmation text on card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify front card displays affirmation text",
+      "Step 3: Verify text is readable and properly sized",
+      "Step 4: Verify text does not overflow card bounds"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Home screen card shows category badge",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify category pill badge is visible on card",
+      "Step 3: Verify badge shows correct category name",
+      "Step 4: Verify badge styling matches design"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Swipe right navigates to next card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Note current affirmation text",
+      "Step 3: Swipe card to the right",
+      "Step 4: Verify 3D rotation animation plays",
+      "Step 5: Verify new card appears with different affirmation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Swipe left navigates to previous card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Swipe right to advance one card",
+      "Step 3: Note current affirmation",
+      "Step 4: Swipe left",
+      "Step 5: Verify previous affirmation is shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Incomplete swipe snaps back",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Begin swipe gesture but release early",
+      "Step 3: Verify card snaps back to original position",
+      "Step 4: Verify spring animation plays"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Swipe up favorites the current card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Note current affirmation",
+      "Step 3: Swipe card upward",
+      "Step 4: Verify heart animation plays",
+      "Step 5: Verify haptic feedback occurs",
+      "Step 6: Navigate to Favorites",
+      "Step 7: Verify affirmation appears in favorites"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Double-tap favorites the current card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Note current affirmation",
+      "Step 3: Double-tap the card",
+      "Step 4: Verify heart animation plays",
+      "Step 5: Verify card glows golden briefly",
+      "Step 6: Navigate to Favorites",
+      "Step 7: Verify affirmation is saved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Share button opens share sheet",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Tap share button on card",
+      "Step 3: Verify iOS share sheet appears",
+      "Step 4: Verify affirmation text is included",
+      "Step 5: Dismiss share sheet"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Shuffle button randomizes card order",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Note current affirmation",
+      "Step 3: Tap shuffle button",
+      "Step 4: Verify cards animate/shuffle",
+      "Step 5: Verify different affirmation is now shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Tab bar displays all 5 tabs",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify Home tab (cards icon) is visible",
+      "Step 3: Verify Favorites tab (heart icon) is visible",
+      "Step 4: Verify Categories tab (grid icon) is visible",
+      "Step 5: Verify Create tab (plus icon) is visible",
+      "Step 6: Verify Settings tab (gear icon) is visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Tab bar navigation to Favorites",
+    "steps": [
+      "Step 1: From Home screen, tap Favorites tab",
+      "Step 2: Verify Favorites screen appears",
+      "Step 3: Verify tab icon shows selected state"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Tab bar navigation to Categories",
+    "steps": [
+      "Step 1: From Home screen, tap Categories tab",
+      "Step 2: Verify Categories screen appears",
+      "Step 3: Verify tab icon shows selected state"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Tab bar navigation to Create",
+    "steps": [
+      "Step 1: From Home screen, tap Create tab",
+      "Step 2: Verify Create screen appears",
+      "Step 3: Verify tab icon shows selected state"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Tab bar navigation to Settings",
+    "steps": [
+      "Step 1: From Home screen, tap Settings tab",
+      "Step 2: Verify Settings screen appears",
+      "Step 3: Verify tab icon shows selected state"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites screen shows empty state when no favorites",
+    "steps": [
+      "Step 1: Ensure no favorites are saved",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Verify empty state illustration is shown",
+      "Step 4: Verify 'Save your first affirmation' message appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites screen displays saved affirmations in grid",
+    "steps": [
+      "Step 1: Save at least 3 affirmations to favorites",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Verify 2-column grid layout",
+      "Step 4: Verify all saved affirmations are displayed",
+      "Step 5: Verify each card shows text and category"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites tap to view full card",
+    "steps": [
+      "Step 1: Save an affirmation to favorites",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Tap on a favorite card",
+      "Step 4: Verify full card view appears",
+      "Step 5: Verify matched geometry animation plays"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites swipe to remove",
+    "steps": [
+      "Step 1: Save an affirmation to favorites",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Swipe left on a favorite card",
+      "Step 4: Verify delete option appears",
+      "Step 5: Confirm deletion",
+      "Step 6: Verify card is removed from favorites"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites sort by Date Added",
+    "steps": [
+      "Step 1: Save multiple affirmations at different times",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Select 'Date Added' sort option",
+      "Step 4: Verify most recent appears first"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites sort by Category",
+    "steps": [
+      "Step 1: Save affirmations from different categories",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Select 'Category' sort option",
+      "Step 4: Verify affirmations are grouped by category"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites sort by Alphabetical",
+    "steps": [
+      "Step 1: Save multiple affirmations",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Select 'Alphabetical' sort option",
+      "Step 4: Verify affirmations are sorted A-Z"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Categories screen shows all 8 categories",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Verify vertical list layout",
+      "Step 3: Verify all 8 categories are listed",
+      "Step 4: Verify each shows name, icon, and count"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Categories screen shows All Categories option",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Verify 'All Categories' option at top",
+      "Step 3: Tap 'All Categories'",
+      "Step 4: Verify Home deck shows all affirmations"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Categories tap filters home deck",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Tap 'Self-Love' category",
+      "Step 3: Navigate to Home screen",
+      "Step 4: Verify only Self-Love affirmations appear",
+      "Step 5: Swipe through multiple cards to confirm"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Categories shows selected indicator",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Tap a category to select it",
+      "Step 3: Verify visual indicator shows selection",
+      "Step 4: Tap another category",
+      "Step 5: Verify indicator moves to new selection"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen displays input field",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Verify 'Create Your Affirmation' title",
+      "Step 3: Verify large text input field is visible",
+      "Step 4: Verify placeholder text is shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen category selector",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Verify horizontal scroll category selector",
+      "Step 3: Scroll through all categories",
+      "Step 4: Tap to select a category",
+      "Step 5: Verify selection is highlighted"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen character count",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Type text in input field",
+      "Step 3: Verify character count updates",
+      "Step 4: Type 200 characters",
+      "Step 5: Verify max limit is enforced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen preview card",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Type affirmation text",
+      "Step 3: Select a category",
+      "Step 4: Verify preview card shows entered text",
+      "Step 5: Verify preview shows selected category badge"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen save affirmation",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Enter affirmation text",
+      "Step 3: Select category",
+      "Step 4: Tap 'Save Affirmation' button",
+      "Step 5: Verify success feedback",
+      "Step 6: Verify affirmation appears in custom list below"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen shows saved custom affirmations",
+    "steps": [
+      "Step 1: Create and save a custom affirmation",
+      "Step 2: Scroll down on Create screen",
+      "Step 3: Verify saved custom affirmations list is visible",
+      "Step 4: Verify newly created affirmation appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Create screen empty state",
+    "steps": [
+      "Step 1: Ensure no custom affirmations exist",
+      "Step 2: Navigate to Create screen",
+      "Step 3: Verify empty state illustration",
+      "Step 4: Verify 'Create your first' message"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Custom affirmations appear in Home deck",
+    "steps": [
+      "Step 1: Create a custom affirmation",
+      "Step 2: Navigate to Home screen",
+      "Step 3: Shuffle or swipe through cards",
+      "Step 4: Verify custom affirmation appears in deck"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings screen displays all sections",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Verify Notifications section is visible",
+      "Step 3: Verify Appearance section is visible",
+      "Step 4: Verify Data section is visible",
+      "Step 5: Verify About section is visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings daily reminder toggle",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Locate daily reminder toggle",
+      "Step 3: Toggle on",
+      "Step 4: Verify toggle state changes",
+      "Step 5: Toggle off",
+      "Step 6: Verify toggle state changes back"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings reminder time picker",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Enable daily reminder",
+      "Step 3: Tap time picker",
+      "Step 4: Select new time",
+      "Step 5: Verify time is saved",
+      "Step 6: Close and reopen Settings",
+      "Step 7: Verify time persists"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings test notification button",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Enable notifications if not enabled",
+      "Step 3: Tap 'Test notification' button",
+      "Step 4: Verify notification appears",
+      "Step 5: Verify notification contains affirmation text"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings dark mode follows system",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Select 'Follows System' appearance option",
+      "Step 3: Change device to dark mode",
+      "Step 4: Verify app switches to dark mode",
+      "Step 5: Change device to light mode",
+      "Step 6: Verify app switches to light mode"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings always light mode",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Select 'Always Light' appearance option",
+      "Step 3: Change device to dark mode",
+      "Step 4: Verify app stays in light mode"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings always dark mode",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Select 'Always Dark' appearance option",
+      "Step 3: Change device to light mode",
+      "Step 4: Verify app stays in dark mode"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings reset favorites",
+    "steps": [
+      "Step 1: Save some affirmations to favorites",
+      "Step 2: Navigate to Settings screen",
+      "Step 3: Tap 'Reset favorites'",
+      "Step 4: Confirm action in alert",
+      "Step 5: Navigate to Favorites screen",
+      "Step 6: Verify all favorites are cleared"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings reset streak",
+    "steps": [
+      "Step 1: Build up a streak by using app multiple days",
+      "Step 2: Navigate to Settings screen",
+      "Step 3: Tap 'Reset streak'",
+      "Step 4: Confirm action in alert",
+      "Step 5: Verify streak is reset to 0"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings export affirmations",
+    "steps": [
+      "Step 1: Create some custom affirmations",
+      "Step 2: Navigate to Settings screen",
+      "Step 3: Tap 'Export affirmations'",
+      "Step 4: Verify share sheet appears",
+      "Step 5: Verify export file is generated"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings app version display",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Scroll to About section",
+      "Step 3: Verify app version is displayed",
+      "Step 4: Verify version matches Info.plist"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings rate app link",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Tap 'Rate app' link",
+      "Step 3: Verify App Store opens or rating prompt appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings share app link",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Tap 'Share app' link",
+      "Step 3: Verify share sheet appears",
+      "Step 4: Verify App Store link is included"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings privacy policy link",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Tap 'Privacy policy' link",
+      "Step 3: Verify Safari or in-app browser opens",
+      "Step 4: Verify privacy policy page loads"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Settings terms of service link",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Tap 'Terms of service' link",
+      "Step 3: Verify Safari or in-app browser opens",
+      "Step 4: Verify terms page loads"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view accessible from Home",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Tap stats button/area",
+      "Step 3: Verify Stats view appears",
+      "Step 4: Verify transition animation plays"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view shows current streak",
+    "steps": [
+      "Step 1: Open Stats view",
+      "Step 2: Verify current streak is displayed",
+      "Step 3: Verify flame icon is shown",
+      "Step 4: Verify streak count is accurate"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view shows longest streak",
+    "steps": [
+      "Step 1: Open Stats view",
+      "Step 2: Verify longest streak is displayed",
+      "Step 3: Verify it's >= current streak"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view shows total affirmations viewed",
+    "steps": [
+      "Step 1: View several affirmations on Home",
+      "Step 2: Open Stats view",
+      "Step 3: Verify total count is displayed",
+      "Step 4: Verify count matches viewed affirmations"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view shows favorite category",
+    "steps": [
+      "Step 1: Favorite several affirmations from one category",
+      "Step 2: Open Stats view",
+      "Step 3: Verify favorite category is displayed",
+      "Step 4: Verify it matches most favorited category"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view calendar heat map",
+    "steps": [
+      "Step 1: Use app for several days",
+      "Step 2: Open Stats view",
+      "Step 3: Verify calendar heat map is displayed",
+      "Step 4: Verify active days are highlighted",
+      "Step 5: Verify intensity reflects activity level"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Stats view motivational message",
+    "steps": [
+      "Step 1: Build a streak",
+      "Step 2: Open Stats view",
+      "Step 3: Verify motivational message is displayed",
+      "Step 4: Verify message relates to streak length"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak increments on daily use",
+    "steps": [
+      "Step 1: Note current streak",
+      "Step 2: Use app today",
+      "Step 3: Close app",
+      "Step 4: Change device date to next day",
+      "Step 5: Open app and view affirmation",
+      "Step 6: Verify streak incremented by 1"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak resets after missed day",
+    "steps": [
+      "Step 1: Build a streak of 3+ days",
+      "Step 2: Skip a day (change device date)",
+      "Step 3: Open app",
+      "Step 4: Verify streak reset to 1"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Longest streak updates correctly",
+    "steps": [
+      "Step 1: Build streak to 5 days",
+      "Step 2: Verify longest streak is 5",
+      "Step 3: Break streak",
+      "Step 4: Verify longest streak remains 5",
+      "Step 5: Build new streak to 7",
+      "Step 6: Verify longest streak updates to 7"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Daily notification fires at scheduled time",
+    "steps": [
+      "Step 1: Enable daily reminder",
+      "Step 2: Set reminder time to 1 minute from now",
+      "Step 3: Close app",
+      "Step 4: Wait for notification",
+      "Step 5: Verify notification appears",
+      "Step 6: Verify notification contains affirmation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification tap opens app to affirmation",
+    "steps": [
+      "Step 1: Receive daily notification",
+      "Step 2: Tap notification",
+      "Step 3: Verify app opens",
+      "Step 4: Verify specific affirmation from notification is shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Badge count shows streak",
+    "steps": [
+      "Step 1: Build a streak of 5",
+      "Step 2: Close app",
+      "Step 3: Check app icon on home screen",
+      "Step 4: Verify badge shows 5"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Small widget displays affirmation",
+    "steps": [
+      "Step 1: Add small Affirm widget to home screen",
+      "Step 2: Verify widget shows affirmation text",
+      "Step 3: Verify gradient background is applied"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Small widget tap opens app",
+    "steps": [
+      "Step 1: Add small widget to home screen",
+      "Step 2: Tap widget",
+      "Step 3: Verify app opens",
+      "Step 4: Verify affirmation from widget is displayed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Medium widget displays affirmation with category",
+    "steps": [
+      "Step 1: Add medium Affirm widget to home screen",
+      "Step 2: Verify affirmation text is displayed",
+      "Step 3: Verify category badge is shown",
+      "Step 4: Verify date is displayed",
+      "Step 5: Verify gradient background"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Large widget displays multiple affirmations",
+    "steps": [
+      "Step 1: Add large Affirm widget to home screen",
+      "Step 2: Verify featured affirmation is prominent",
+      "Step 3: Verify 2 additional affirmations below",
+      "Step 4: Verify streak counter is shown",
+      "Step 5: Verify gradient background"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Widget updates daily",
+    "steps": [
+      "Step 1: Add widget to home screen",
+      "Step 2: Note current affirmation",
+      "Step 3: Wait for next day (or change date)",
+      "Step 4: Verify widget shows new affirmation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "iCloud sync favorites across devices",
+    "steps": [
+      "Step 1: Sign into iCloud on device A",
+      "Step 2: Save affirmation to favorites",
+      "Step 3: Sign into same iCloud on device B",
+      "Step 4: Open app on device B",
+      "Step 5: Verify favorite appears on device B"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "iCloud sync custom affirmations",
+    "steps": [
+      "Step 1: Create custom affirmation on device A",
+      "Step 2: Open app on device B with same iCloud",
+      "Step 3: Verify custom affirmation synced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak milestone celebration at 7 days",
+    "steps": [
+      "Step 1: Build streak to 7 days",
+      "Step 2: Verify celebration animation plays",
+      "Step 3: Verify milestone message appears",
+      "Step 4: Verify haptic feedback"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak milestone celebration at 30 days",
+    "steps": [
+      "Step 1: Build streak to 30 days",
+      "Step 2: Verify special celebration animation",
+      "Step 3: Verify achievement message"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Audio affirmation text-to-speech",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Tap audio/speaker button on card",
+      "Step 3: Verify affirmation is read aloud",
+      "Step 4: Verify audio completes"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Journaling feature access",
+    "steps": [
+      "Step 1: View an affirmation on Home",
+      "Step 2: Tap journal/reflect button",
+      "Step 3: Verify journal entry screen opens",
+      "Step 4: Verify affirmation is shown as prompt"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Journaling save entry",
+    "steps": [
+      "Step 1: Open journal for an affirmation",
+      "Step 2: Type reflection text",
+      "Step 3: Tap save",
+      "Step 4: Verify entry is saved",
+      "Step 5: Reopen journal for same affirmation",
+      "Step 6: Verify previous entry is shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Mood tracking integration",
+    "steps": [
+      "Step 1: View affirmation on Home",
+      "Step 2: Tap mood selector",
+      "Step 3: Select current mood",
+      "Step 4: Verify mood is logged",
+      "Step 5: Check Stats view for mood data"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Siri Shortcuts - Get daily affirmation",
+    "steps": [
+      "Step 1: Open Shortcuts app",
+      "Step 2: Create shortcut with Affirm action",
+      "Step 3: Run shortcut",
+      "Step 4: Verify affirmation is returned"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Share as image with custom background",
+    "steps": [
+      "Step 1: View affirmation on Home",
+      "Step 2: Tap share button",
+      "Step 3: Select 'Share as Image'",
+      "Step 4: Choose background style",
+      "Step 5: Verify image preview shows affirmation",
+      "Step 6: Share image"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category-specific card backgrounds",
+    "steps": [
+      "Step 1: Filter to Self-Love category",
+      "Step 2: Verify card has Self-Love themed background",
+      "Step 3: Filter to Gratitude category",
+      "Step 4: Verify card has different Gratitude themed background"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Data persistence across app restarts",
+    "steps": [
+      "Step 1: Save favorites and create custom affirmations",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Verify all favorites persist",
+      "Step 5: Verify custom affirmations persist",
+      "Step 6: Verify streak persists"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "SwiftData model migration",
+    "steps": [
+      "Step 1: Install older version of app with data",
+      "Step 2: Update to new version",
+      "Step 3: Launch app",
+      "Step 4: Verify all data migrated correctly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Bundled affirmations load correctly",
+    "steps": [
+      "Step 1: Fresh install app",
+      "Step 2: Complete onboarding",
+      "Step 3: Navigate to Home",
+      "Step 4: Verify affirmations are available",
+      "Step 5: Swipe through 10+ cards",
+      "Step 6: Verify variety of affirmations"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "All 8 categories have bundled content",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Verify Self-Love shows 30 affirmations",
+      "Step 3: Verify Confidence shows 30 affirmations",
+      "Step 4: Verify Gratitude shows 25 affirmations",
+      "Step 5: Verify Success shows 25 affirmations",
+      "Step 6: Verify Health shows 20 affirmations",
+      "Step 7: Verify Relationships shows 20 affirmations",
+      "Step 8: Verify Morning shows 25 affirmations",
+      "Step 9: Verify Evening shows 25 affirmations",
+      "Step 10: Verify total is 200+ affirmations"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Mesh gradient background uses correct coral/orange colors",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify background is animated mesh gradient",
+      "Step 3: Verify warm coral (#FF6B6B) is present",
+      "Step 4: Verify salmon pink (#FFA07A) is present",
+      "Step 5: Verify sunset orange (#FF8C42) is present"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Mesh gradient animates subtly",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Observe background for 5 seconds",
+      "Step 3: Verify gradient positions shift subtly",
+      "Step 4: Verify animation is smooth and not jarring"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Sparkle particles float in background",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify sparkle particles are visible",
+      "Step 3: Verify particles float upward",
+      "Step 4: Verify opacity pulses on sparkles"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Card has golden border",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify front card has golden border",
+      "Step 3: Verify border color is #FFD93D",
+      "Step 4: Verify border is visible and consistent"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Card has sunburst glow shadow",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify card has glow effect",
+      "Step 3: Verify glow is golden yellow",
+      "Step 4: Verify glow radius is approximately 21pt"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Stacked cards have correct scale",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify front card is scale 1.0",
+      "Step 3: Verify second card is scale 0.95",
+      "Step 4: Verify third card is scale 0.9"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Stacked cards have correct offset",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify cards are offset vertically",
+      "Step 3: Verify stacked appearance is visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Card swipe 3D rotation animation",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Begin swipe gesture",
+      "Step 3: Verify card rotates on Y-axis",
+      "Step 4: Verify rotation is smooth 3D effect"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Card swipe spring animation timing",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Swipe card completely",
+      "Step 3: Verify spring animation plays",
+      "Step 4: Verify animation duration is ~0.5s"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Favorite heart animation scale",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Double-tap to favorite",
+      "Step 3: Verify heart scales 1.0 \u2192 1.3 \u2192 1.0",
+      "Step 4: Verify animation is smooth"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Favorite particle burst effect",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Double-tap to favorite",
+      "Step 3: Verify particle burst effect plays",
+      "Step 4: Verify particles emanate from heart"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Favorite golden glow on card",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Double-tap to favorite",
+      "Step 3: Verify card briefly glows golden",
+      "Step 4: Verify glow fades out"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Typography uses SF Pro Rounded",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify affirmation text uses SF Pro Rounded",
+      "Step 3: Navigate to other screens",
+      "Step 4: Verify consistent font family throughout"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Card affirmation text size 24-28pt",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify affirmation text is 24-28pt",
+      "Step 3: Verify text is medium weight"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Category label text size 14pt semibold",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Verify category badge text is 14pt",
+      "Step 3: Verify text is semibold weight"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Body text size 16pt regular",
+    "steps": [
+      "Step 1: Navigate to Settings screen",
+      "Step 2: Verify body text is 16pt",
+      "Step 3: Verify text is regular weight"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Tab bar icons match design spec",
+    "steps": [
+      "Step 1: View tab bar",
+      "Step 2: Verify Home uses cards icon",
+      "Step 3: Verify Favorites uses heart icon",
+      "Step 4: Verify Categories uses grid icon",
+      "Step 5: Verify Create uses plus icon",
+      "Step 6: Verify Settings uses gear icon"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Tab bar selected state uses coral accent",
+    "steps": [
+      "Step 1: View tab bar",
+      "Step 2: Tap different tabs",
+      "Step 3: Verify selected tab uses warm coral (#FF6B6B)",
+      "Step 4: Verify unselected tabs are muted"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Fade transitions between tabs",
+    "steps": [
+      "Step 1: Tap Home tab",
+      "Step 2: Tap Favorites tab",
+      "Step 3: Verify fade transition animation",
+      "Step 4: Verify transition is smooth"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Slide transitions for navigation stack",
+    "steps": [
+      "Step 1: Navigate to a detail view",
+      "Step 2: Verify slide-in animation",
+      "Step 3: Navigate back",
+      "Step 4: Verify slide-out animation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Matched geometry for card expansions",
+    "steps": [
+      "Step 1: Navigate to Favorites",
+      "Step 2: Tap a favorite card",
+      "Step 3: Verify matched geometry animation",
+      "Step 4: Verify card expands smoothly from grid position"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Onboarding welcome animation",
+    "steps": [
+      "Step 1: Fresh install app",
+      "Step 2: Launch app",
+      "Step 3: Verify app icon/logo animates in",
+      "Step 4: Verify animation is polished"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Category selection card styling",
+    "steps": [
+      "Step 1: Navigate to Category Selection in onboarding",
+      "Step 2: Verify cards have consistent styling",
+      "Step 3: Verify selected state is visually distinct",
+      "Step 4: Verify unselected state is clear"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Favorites grid 2-column layout",
+    "steps": [
+      "Step 1: Save multiple favorites",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Verify 2-column grid layout",
+      "Step 4: Verify consistent card sizes",
+      "Step 5: Verify proper spacing between cards"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Empty state illustrations",
+    "steps": [
+      "Step 1: Clear all favorites",
+      "Step 2: Navigate to Favorites",
+      "Step 3: Verify illustration is displayed",
+      "Step 4: Verify illustration matches app style"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Create screen preview card matches real card",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Enter text and select category",
+      "Step 3: Verify preview card styling matches Home cards",
+      "Step 4: Verify golden border and glow"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Settings screen section headers",
+    "steps": [
+      "Step 1: Navigate to Settings",
+      "Step 2: Verify section headers are styled consistently",
+      "Step 3: Verify proper spacing between sections"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Stats view flame icon for streak",
+    "steps": [
+      "Step 1: Open Stats view",
+      "Step 2: Verify flame icon next to streak",
+      "Step 3: Verify icon color matches design"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Stats calendar heat map colors",
+    "steps": [
+      "Step 1: Open Stats view",
+      "Step 2: Verify heat map uses coral color gradient",
+      "Step 3: Verify intensity levels are distinguishable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Widget gradient background",
+    "steps": [
+      "Step 1: Add widget to home screen",
+      "Step 2: Verify gradient matches app colors",
+      "Step 3: Verify gradient is coral/orange tones"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Dark mode color adaptation",
+    "steps": [
+      "Step 1: Enable dark mode",
+      "Step 2: Verify colors adapt appropriately",
+      "Step 3: Verify text remains readable",
+      "Step 4: Verify contrast is maintained"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic feedback on card swipe",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Swipe card",
+      "Step 3: Verify haptic feedback occurs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic feedback on favorite action",
+    "steps": [
+      "Step 1: Navigate to Home screen",
+      "Step 2: Double-tap to favorite",
+      "Step 3: Verify success haptic feedback"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic feedback on button taps",
+    "steps": [
+      "Step 1: Navigate through app",
+      "Step 2: Tap various buttons",
+      "Step 3: Verify appropriate haptic feedback"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "VoiceOver support for Home screen",
+    "steps": [
+      "Step 1: Enable VoiceOver",
+      "Step 2: Navigate to Home screen",
+      "Step 3: Verify affirmation text is read",
+      "Step 4: Verify category is announced",
+      "Step 5: Verify swipe actions are described"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "VoiceOver support for tab bar",
+    "steps": [
+      "Step 1: Enable VoiceOver",
+      "Step 2: Navigate tab bar",
+      "Step 3: Verify each tab is properly labeled",
+      "Step 4: Verify selected state is announced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "VoiceOver support for Favorites",
+    "steps": [
+      "Step 1: Enable VoiceOver",
+      "Step 2: Navigate to Favorites",
+      "Step 3: Verify each favorite is accessible",
+      "Step 4: Verify delete action is described"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "VoiceOver support for Create screen",
+    "steps": [
+      "Step 1: Enable VoiceOver",
+      "Step 2: Navigate to Create screen",
+      "Step 3: Verify text field is accessible",
+      "Step 4: Verify category selector is navigable",
+      "Step 5: Verify save button is labeled"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Dynamic Type support - small text",
+    "steps": [
+      "Step 1: Set device text size to smallest",
+      "Step 2: Open app",
+      "Step 3: Verify text scales down appropriately",
+      "Step 4: Verify layout remains intact"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Dynamic Type support - large text",
+    "steps": [
+      "Step 1: Set device text size to largest",
+      "Step 2: Open app",
+      "Step 3: Verify text scales up appropriately",
+      "Step 4: Verify layout adapts",
+      "Step 5: Verify no text truncation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Dynamic Type support - accessibility sizes",
+    "steps": [
+      "Step 1: Enable accessibility text sizes",
+      "Step 2: Set to maximum size",
+      "Step 3: Open app",
+      "Step 4: Verify app remains usable",
+      "Step 5: Verify scrolling works for overflow"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Reduce Motion disables particle animations",
+    "steps": [
+      "Step 1: Enable Reduce Motion in device settings",
+      "Step 2: Open app",
+      "Step 3: Verify sparkle particles are disabled",
+      "Step 4: Verify mesh gradient animation is reduced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Reduce Motion simplifies card animations",
+    "steps": [
+      "Step 1: Enable Reduce Motion",
+      "Step 2: Navigate to Home",
+      "Step 3: Swipe cards",
+      "Step 4: Verify animations are simplified",
+      "Step 5: Verify 3D rotation is reduced or removed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "High contrast mode support",
+    "steps": [
+      "Step 1: Enable Increase Contrast in device settings",
+      "Step 2: Open app",
+      "Step 3: Verify text contrast is increased",
+      "Step 4: Verify UI elements are more distinct"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Minimum tap targets 44x44pt",
+    "steps": [
+      "Step 1: Navigate through all screens",
+      "Step 2: Verify all buttons are at least 44x44pt",
+      "Step 3: Verify tab bar items meet minimum",
+      "Step 4: Verify card actions meet minimum"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App launch time under 1 second",
+    "steps": [
+      "Step 1: Force quit app",
+      "Step 2: Launch app",
+      "Step 3: Measure time to interactive",
+      "Step 4: Verify launch < 1 second"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Card swipe maintains 60fps",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Enable frame rate monitor",
+      "Step 3: Swipe cards rapidly",
+      "Step 4: Verify 60fps is maintained"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Background animations under 5% CPU",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Monitor CPU usage",
+      "Step 3: Let app idle with animations",
+      "Step 4: Verify CPU < 5%"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Memory usage under 100MB",
+    "steps": [
+      "Step 1: Launch app",
+      "Step 2: Navigate through all screens",
+      "Step 3: Monitor memory usage",
+      "Step 4: Verify memory < 100MB"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification permission denied shows settings prompt",
+    "steps": [
+      "Step 1: Deny notification permission",
+      "Step 2: Try to enable notifications in Settings",
+      "Step 3: Verify prompt to open device Settings appears",
+      "Step 4: Tap prompt",
+      "Step 5: Verify device Settings opens to app"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Widget default affirmation when none configured",
+    "steps": [
+      "Step 1: Add widget without configuration",
+      "Step 2: Verify default affirmation is shown",
+      "Step 3: Verify widget is not blank"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Handle empty deck gracefully",
+    "steps": [
+      "Step 1: Filter to category with no affirmations",
+      "Step 2: Verify empty state is shown",
+      "Step 3: Verify app doesn't crash"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Delete custom affirmation",
+    "steps": [
+      "Step 1: Create a custom affirmation",
+      "Step 2: Navigate to Create screen",
+      "Step 3: Find custom affirmation in list",
+      "Step 4: Swipe to delete",
+      "Step 5: Confirm deletion",
+      "Step 6: Verify affirmation is removed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Edit custom affirmation",
+    "steps": [
+      "Step 1: Create a custom affirmation",
+      "Step 2: Tap to edit",
+      "Step 3: Modify text",
+      "Step 4: Save changes",
+      "Step 5: Verify changes persist"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Unfavorite from Favorites screen",
+    "steps": [
+      "Step 1: Save affirmation to favorites",
+      "Step 2: Navigate to Favorites",
+      "Step 3: Swipe to remove",
+      "Step 4: Verify affirmation removed",
+      "Step 5: Navigate to Home",
+      "Step 6: Find same affirmation",
+      "Step 7: Verify it's no longer favorited"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Unfavorite from Home screen",
+    "steps": [
+      "Step 1: Favorite an affirmation",
+      "Step 2: Double-tap same card again",
+      "Step 3: Verify unfavorite animation",
+      "Step 4: Navigate to Favorites",
+      "Step 5: Verify affirmation removed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Multiple category filter",
+    "steps": [
+      "Step 1: Navigate to Categories",
+      "Step 2: Select Self-Love",
+      "Step 3: Also select Confidence",
+      "Step 4: Navigate to Home",
+      "Step 5: Verify deck contains both categories",
+      "Step 6: Swipe through to confirm mix"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category count updates with custom affirmations",
+    "steps": [
+      "Step 1: Note Self-Love count in Categories",
+      "Step 2: Create custom Self-Love affirmation",
+      "Step 3: Navigate to Categories",
+      "Step 4: Verify Self-Love count increased by 1"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Share affirmation via Messages",
+    "steps": [
+      "Step 1: View affirmation on Home",
+      "Step 2: Tap share button",
+      "Step 3: Select Messages",
+      "Step 4: Verify affirmation text is in message",
+      "Step 5: Send message"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Share affirmation via social media",
+    "steps": [
+      "Step 1: View affirmation on Home",
+      "Step 2: Tap share button",
+      "Step 3: Select social media app",
+      "Step 4: Verify affirmation is shared"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Copy affirmation to clipboard",
+    "steps": [
+      "Step 1: View affirmation on Home",
+      "Step 2: Tap share button",
+      "Step 3: Select Copy",
+      "Step 4: Paste in another app",
+      "Step 5: Verify text matches"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Long affirmation text handling",
+    "steps": [
+      "Step 1: Create custom affirmation at max 200 chars",
+      "Step 2: View on Home screen",
+      "Step 3: Verify text fits on card",
+      "Step 4: Verify text is readable",
+      "Step 5: Verify no truncation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Short affirmation text handling",
+    "steps": [
+      "Step 1: Create custom affirmation with 10 chars",
+      "Step 2: View on Home screen",
+      "Step 3: Verify text is centered",
+      "Step 4: Verify card looks balanced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Special characters in affirmation",
+    "steps": [
+      "Step 1: Create affirmation with emoji",
+      "Step 2: Create affirmation with quotes",
+      "Step 3: Create affirmation with apostrophe",
+      "Step 4: Verify all display correctly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Orientation lock respected",
+    "steps": [
+      "Step 1: Lock device to portrait",
+      "Step 2: Open app",
+      "Step 3: Rotate device",
+      "Step 4: Verify app stays portrait"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App handles interruptions gracefully",
+    "steps": [
+      "Step 1: Open app",
+      "Step 2: Receive phone call",
+      "Step 3: End call",
+      "Step 4: Verify app resumes correctly",
+      "Step 5: Verify no data loss"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App handles low memory warning",
+    "steps": [
+      "Step 1: Open app",
+      "Step 2: Simulate low memory warning",
+      "Step 3: Verify app doesn't crash",
+      "Step 4: Verify data is preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Background to foreground transition",
+    "steps": [
+      "Step 1: Open app",
+      "Step 2: Press home button",
+      "Step 3: Wait 30 seconds",
+      "Step 4: Return to app",
+      "Step 5: Verify state is preserved",
+      "Step 6: Verify animations resume"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App state restoration after termination",
+    "steps": [
+      "Step 1: Navigate to specific screen",
+      "Step 2: Force terminate app",
+      "Step 3: Relaunch app",
+      "Step 4: Verify appropriate state restoration"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Consistent corner radius throughout app",
+    "steps": [
+      "Step 1: Navigate through all screens",
+      "Step 2: Verify cards have consistent corner radius",
+      "Step 3: Verify buttons have consistent corner radius",
+      "Step 4: Verify badges have consistent corner radius"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Consistent spacing and padding",
+    "steps": [
+      "Step 1: Navigate through all screens",
+      "Step 2: Verify consistent margins",
+      "Step 3: Verify consistent padding in cards",
+      "Step 4: Verify consistent spacing between elements"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Category icons are distinct and recognizable",
+    "steps": [
+      "Step 1: Navigate to Categories screen",
+      "Step 2: Verify each category has unique icon",
+      "Step 3: Verify icons match category meaning",
+      "Step 4: Verify icons are consistent size"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Loading states have appropriate indicators",
+    "steps": [
+      "Step 1: Trigger any loading state",
+      "Step 2: Verify loading indicator appears",
+      "Step 3: Verify indicator matches app style"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Error states have appropriate styling",
+    "steps": [
+      "Step 1: Trigger an error state",
+      "Step 2: Verify error message is styled appropriately",
+      "Step 3: Verify error doesn't break layout"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Buttons have appropriate pressed states",
+    "steps": [
+      "Step 1: Press and hold various buttons",
+      "Step 2: Verify pressed state is visible",
+      "Step 3: Verify state change is immediate"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Text input fields have focus states",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Tap text input",
+      "Step 3: Verify focus state is visible",
+      "Step 4: Verify cursor is visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Scroll indicators match app style",
+    "steps": [
+      "Step 1: Navigate to scrollable screen",
+      "Step 2: Scroll content",
+      "Step 3: Verify scroll indicator appears",
+      "Step 4: Verify indicator color matches theme"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete onboarding to first affirmation flow",
+    "steps": [
+      "Step 1: Fresh install app",
+      "Step 2: Launch app",
+      "Step 3: Verify Welcome screen appears",
+      "Step 4: Tap Get Started",
+      "Step 5: Verify Category Selection appears",
+      "Step 6: Select 3 categories",
+      "Step 7: Tap Continue",
+      "Step 8: Verify Notifications screen appears",
+      "Step 9: Set reminder time",
+      "Step 10: Tap Start Affirming",
+      "Step 11: Verify Home screen with cards appears",
+      "Step 12: Verify first affirmation is from selected categories"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete daily usage flow",
+    "steps": [
+      "Step 1: Open app",
+      "Step 2: View first affirmation",
+      "Step 3: Swipe through 5 affirmations",
+      "Step 4: Favorite 2 affirmations",
+      "Step 5: Navigate to Favorites",
+      "Step 6: Verify 2 favorites saved",
+      "Step 7: Navigate to Stats",
+      "Step 8: Verify view count updated",
+      "Step 9: Verify streak maintained",
+      "Step 10: Close app"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete custom affirmation creation flow",
+    "steps": [
+      "Step 1: Navigate to Create tab",
+      "Step 2: Tap text input",
+      "Step 3: Type affirmation text",
+      "Step 4: Scroll category selector",
+      "Step 5: Select category",
+      "Step 6: Verify preview updates",
+      "Step 7: Tap Save Affirmation",
+      "Step 8: Verify success feedback",
+      "Step 9: Verify affirmation in list below",
+      "Step 10: Navigate to Home",
+      "Step 11: Shuffle deck",
+      "Step 12: Find custom affirmation in deck"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete category filtering flow",
+    "steps": [
+      "Step 1: Navigate to Categories tab",
+      "Step 2: Note affirmation counts",
+      "Step 3: Tap Self-Love category",
+      "Step 4: Verify selection indicator",
+      "Step 5: Navigate to Home",
+      "Step 6: Swipe through 10 cards",
+      "Step 7: Verify all are Self-Love category",
+      "Step 8: Navigate back to Categories",
+      "Step 9: Tap All Categories",
+      "Step 10: Navigate to Home",
+      "Step 11: Verify mixed categories appear"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete settings configuration flow",
+    "steps": [
+      "Step 1: Navigate to Settings tab",
+      "Step 2: Enable daily reminder",
+      "Step 3: Set reminder time to 9:00 AM",
+      "Step 4: Tap test notification",
+      "Step 5: Verify notification received",
+      "Step 6: Change appearance to Always Dark",
+      "Step 7: Verify app switches to dark mode",
+      "Step 8: Scroll to About section",
+      "Step 9: Verify version is displayed",
+      "Step 10: Tap Share app",
+      "Step 11: Verify share sheet appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete favorites management flow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Favorite 5 different affirmations",
+      "Step 3: Navigate to Favorites",
+      "Step 4: Verify 5 favorites displayed",
+      "Step 5: Sort by Category",
+      "Step 6: Verify sorting applied",
+      "Step 7: Tap first favorite",
+      "Step 8: Verify full card view",
+      "Step 9: Dismiss card view",
+      "Step 10: Swipe to delete one favorite",
+      "Step 11: Verify 4 favorites remain"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete widget setup flow",
+    "steps": [
+      "Step 1: Long press home screen",
+      "Step 2: Tap + to add widget",
+      "Step 3: Search for Affirm",
+      "Step 4: Select small widget",
+      "Step 5: Add to home screen",
+      "Step 6: Verify widget displays affirmation",
+      "Step 7: Tap widget",
+      "Step 8: Verify app opens",
+      "Step 9: Add medium widget",
+      "Step 10: Verify category badge visible",
+      "Step 11: Add large widget",
+      "Step 12: Verify streak counter visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete streak building flow",
+    "steps": [
+      "Step 1: Open app on day 1",
+      "Step 2: View affirmation",
+      "Step 3: Check Stats - streak should be 1",
+      "Step 4: Advance to day 2",
+      "Step 5: Open app and view affirmation",
+      "Step 6: Check Stats - streak should be 2",
+      "Step 7: Advance to day 3",
+      "Step 8: Open app and view affirmation",
+      "Step 9: Check Stats - streak should be 3",
+      "Step 10: Verify longest streak matches current"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete journaling flow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap journal button",
+      "Step 4: Verify journal screen opens",
+      "Step 5: Verify affirmation shown as prompt",
+      "Step 6: Type reflection text",
+      "Step 7: Save entry",
+      "Step 8: Close journal",
+      "Step 9: Reopen journal for same affirmation",
+      "Step 10: Verify previous entry is shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete share as image flow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap share button",
+      "Step 4: Select Share as Image",
+      "Step 5: View background options",
+      "Step 6: Select custom background",
+      "Step 7: Verify preview updates",
+      "Step 8: Tap share",
+      "Step 9: Select save to photos",
+      "Step 10: Verify image saved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete audio affirmation flow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap audio/speaker button",
+      "Step 4: Verify text-to-speech starts",
+      "Step 5: Verify affirmation is read aloud",
+      "Step 6: Wait for completion",
+      "Step 7: Verify audio stops",
+      "Step 8: Tap again to replay"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete mood tracking flow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap mood selector",
+      "Step 4: View mood options",
+      "Step 5: Select current mood",
+      "Step 6: Verify mood logged",
+      "Step 7: Navigate to Stats",
+      "Step 8: Verify mood data appears",
+      "Step 9: View mood trends"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete iCloud sync flow",
+    "steps": [
+      "Step 1: Sign into iCloud",
+      "Step 2: Create custom affirmation",
+      "Step 3: Favorite several affirmations",
+      "Step 4: Sign into same iCloud on second device",
+      "Step 5: Open app on second device",
+      "Step 6: Navigate to Favorites",
+      "Step 7: Verify favorites synced",
+      "Step 8: Navigate to Create",
+      "Step 9: Verify custom affirmation synced"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Affirmation of the day notification",
+    "steps": [
+      "Step 1: Enable daily notifications",
+      "Step 2: Wait for scheduled time",
+      "Step 3: Verify notification appears",
+      "Step 4: Verify notification contains affirmation",
+      "Step 5: Tap notification",
+      "Step 6: Verify app opens to that affirmation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak milestone at 7 days celebration",
+    "steps": [
+      "Step 1: Build streak to 6 days",
+      "Step 2: Open app on day 7",
+      "Step 3: View affirmation",
+      "Step 4: Verify celebration animation plays",
+      "Step 5: Verify milestone message appears",
+      "Step 6: Verify haptic feedback"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Siri Shortcuts integration",
+    "steps": [
+      "Step 1: Open Shortcuts app",
+      "Step 2: Create new shortcut",
+      "Step 3: Add Affirm action",
+      "Step 4: Configure to get daily affirmation",
+      "Step 5: Run shortcut",
+      "Step 6: Verify affirmation is returned",
+      "Step 7: Add to Siri",
+      "Step 8: Test voice activation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Onboarding screens have consistent styling",
+    "steps": [
+      "Step 1: Go through onboarding",
+      "Step 2: Verify Welcome screen styling",
+      "Step 3: Verify Category Selection styling",
+      "Step 4: Verify Notifications screen styling",
+      "Step 5: Verify consistent button styles",
+      "Step 6: Verify consistent typography"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Stats view visual hierarchy",
+    "steps": [
+      "Step 1: Open Stats view",
+      "Step 2: Verify streak is prominently displayed",
+      "Step 3: Verify secondary stats are smaller",
+      "Step 4: Verify calendar is appropriately sized",
+      "Step 5: Verify motivational message styling"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Create screen input field styling",
+    "steps": [
+      "Step 1: Navigate to Create screen",
+      "Step 2: Verify input field has appropriate size",
+      "Step 3: Verify placeholder text styling",
+      "Step 4: Verify character count styling",
+      "Step 5: Verify input field border/background"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Notification permission screen styling",
+    "steps": [
+      "Step 1: Navigate to Notifications in onboarding",
+      "Step 2: Verify time picker styling",
+      "Step 3: Verify Enable button styling",
+      "Step 4: Verify Skip option styling",
+      "Step 5: Verify illustration if present"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Share sheet image preview styling",
+    "steps": [
+      "Step 1: Tap share on affirmation",
+      "Step 2: Select Share as Image",
+      "Step 3: Verify image preview styling",
+      "Step 4: Verify background options styling",
+      "Step 5: Verify affirmation text on image"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App handles very long session gracefully",
+    "steps": [
+      "Step 1: Open app",
+      "Step 2: Use app continuously for 30 minutes",
+      "Step 3: Swipe through 100+ cards",
+      "Step 4: Verify no memory leaks",
+      "Step 5: Verify animations remain smooth",
+      "Step 6: Verify no crashes"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "App handles rapid interactions",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Rapidly swipe cards 20 times",
+      "Step 3: Rapidly double-tap 10 times",
+      "Step 4: Rapidly switch tabs",
+      "Step 5: Verify no crashes",
+      "Step 6: Verify state remains consistent"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category-specific card background for Self-Love",
+    "steps": [
+      "Step 1: Filter to Self-Love category",
+      "Step 2: View cards on Home screen",
+      "Step 3: Verify Self-Love has unique background tint",
+      "Step 4: Verify background matches category theme"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category-specific card background for Morning",
+    "steps": [
+      "Step 1: Filter to Morning category",
+      "Step 2: View cards on Home screen",
+      "Step 3: Verify Morning has sunrise-themed background",
+      "Step 4: Verify distinct from other categories"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category-specific card background for Evening",
+    "steps": [
+      "Step 1: Filter to Evening category",
+      "Step 2: View cards on Home screen",
+      "Step 3: Verify Evening has sunset/night-themed background",
+      "Step 4: Verify distinct from Morning category"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Journal entry screen styling",
+    "steps": [
+      "Step 1: Open journal for an affirmation",
+      "Step 2: Verify affirmation prompt styling",
+      "Step 3: Verify text input area styling",
+      "Step 4: Verify save button styling",
+      "Step 5: Verify consistent with app design system"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete first-time user experience from install to daily use",
+    "steps": [
+      "Step 1: Fresh install app on device",
+      "Step 2: Launch app for first time",
+      "Step 3: Verify Welcome screen with logo animation",
+      "Step 4: Tap Get Started button",
+      "Step 5: Select Self-Love, Confidence, and Gratitude categories",
+      "Step 6: Tap Continue button",
+      "Step 7: Set notification time to 8:00 AM",
+      "Step 8: Enable notifications",
+      "Step 9: Tap Start Affirming",
+      "Step 10: Verify Home screen loads with card deck",
+      "Step 11: Swipe through 3 affirmations",
+      "Step 12: Double-tap to favorite one",
+      "Step 13: Navigate to Favorites tab",
+      "Step 14: Verify favorited affirmation appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete data export and verification flow",
+    "steps": [
+      "Step 1: Create 3 custom affirmations",
+      "Step 2: Favorite 5 bundled affirmations",
+      "Step 3: Navigate to Settings",
+      "Step 4: Tap Export affirmations",
+      "Step 5: Save export file",
+      "Step 6: Open export file",
+      "Step 7: Verify custom affirmations in export",
+      "Step 8: Verify favorites in export",
+      "Step 9: Verify category data in export",
+      "Step 10: Verify date information in export"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete accessibility testing with VoiceOver",
+    "steps": [
+      "Step 1: Enable VoiceOver on device",
+      "Step 2: Launch app",
+      "Step 3: Navigate through onboarding with VoiceOver",
+      "Step 4: Verify all buttons are labeled",
+      "Step 5: Navigate to Home screen",
+      "Step 6: Verify affirmation text is read",
+      "Step 7: Perform swipe gesture with VoiceOver",
+      "Step 8: Navigate to Favorites tab",
+      "Step 9: Verify grid items are accessible",
+      "Step 10: Navigate to Create tab",
+      "Step 11: Verify text input is accessible",
+      "Step 12: Navigate to Settings",
+      "Step 13: Verify all toggles are labeled"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete dark mode visual verification",
+    "steps": [
+      "Step 1: Enable Always Dark mode in Settings",
+      "Step 2: Navigate to Home screen",
+      "Step 3: Verify card colors adapt to dark mode",
+      "Step 4: Verify text is readable on dark background",
+      "Step 5: Navigate to Favorites",
+      "Step 6: Verify grid cards are visible",
+      "Step 7: Navigate to Categories",
+      "Step 8: Verify category cards are visible",
+      "Step 9: Navigate to Create",
+      "Step 10: Verify input field is visible",
+      "Step 11: Navigate to Settings",
+      "Step 12: Verify all sections are readable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete notification lifecycle testing",
+    "steps": [
+      "Step 1: Enable daily reminder in Settings",
+      "Step 2: Set time to 1 minute from now",
+      "Step 3: Close app completely",
+      "Step 4: Wait for notification",
+      "Step 5: Verify notification appears with affirmation",
+      "Step 6: Tap notification",
+      "Step 7: Verify app opens to correct affirmation",
+      "Step 8: Navigate to Settings",
+      "Step 9: Disable daily reminder",
+      "Step 10: Wait past scheduled time",
+      "Step 11: Verify no notification appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete widget configuration and interaction",
+    "steps": [
+      "Step 1: Add small widget to home screen",
+      "Step 2: Verify affirmation displays",
+      "Step 3: Add medium widget to home screen",
+      "Step 4: Verify category badge displays",
+      "Step 5: Add large widget to home screen",
+      "Step 6: Verify streak counter displays",
+      "Step 7: Tap small widget",
+      "Step 8: Verify app opens",
+      "Step 9: Return to home screen",
+      "Step 10: Wait for widget refresh",
+      "Step 11: Verify widgets update with new content"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete favorites workflow with sorting and filtering",
+    "steps": [
+      "Step 1: Favorite 10 affirmations from different categories",
+      "Step 2: Navigate to Favorites screen",
+      "Step 3: Verify all 10 appear in grid",
+      "Step 4: Select Sort by Date Added",
+      "Step 5: Verify most recent is first",
+      "Step 6: Select Sort by Category",
+      "Step 7: Verify grouped by category",
+      "Step 8: Select Sort by Alphabetical",
+      "Step 9: Verify A-Z ordering",
+      "Step 10: Swipe to delete 2 favorites",
+      "Step 11: Verify 8 remain",
+      "Step 12: Tap a favorite to view full card"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete custom affirmation lifecycle",
+    "steps": [
+      "Step 1: Navigate to Create tab",
+      "Step 2: Enter affirmation text",
+      "Step 3: Select Self-Love category",
+      "Step 4: Verify preview card updates",
+      "Step 5: Tap Save Affirmation",
+      "Step 6: Verify appears in custom list",
+      "Step 7: Navigate to Home",
+      "Step 8: Filter to Self-Love category",
+      "Step 9: Find custom affirmation in deck",
+      "Step 10: Favorite the custom affirmation",
+      "Step 11: Navigate to Favorites",
+      "Step 12: Verify custom affirmation in favorites"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete stats tracking verification",
+    "steps": [
+      "Step 1: Note initial stats values",
+      "Step 2: View 10 affirmations on Home",
+      "Step 3: Open Stats view",
+      "Step 4: Verify total viewed increased by 10",
+      "Step 5: Favorite 3 Self-Love affirmations",
+      "Step 6: Open Stats view",
+      "Step 7: Verify favorite category shows Self-Love",
+      "Step 8: Check calendar heat map",
+      "Step 9: Verify today is highlighted",
+      "Step 10: Verify streak is accurate",
+      "Step 11: Verify motivational message displays"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete category management workflow",
+    "steps": [
+      "Step 1: Navigate to Categories tab",
+      "Step 2: Verify all 8 categories listed",
+      "Step 3: Verify counts are accurate",
+      "Step 4: Tap Self-Love category",
+      "Step 5: Navigate to Home",
+      "Step 6: Verify only Self-Love cards",
+      "Step 7: Navigate back to Categories",
+      "Step 8: Tap Confidence category (multi-select)",
+      "Step 9: Navigate to Home",
+      "Step 10: Verify mix of Self-Love and Confidence",
+      "Step 11: Navigate to Categories",
+      "Step 12: Tap All Categories",
+      "Step 13: Navigate to Home",
+      "Step 14: Verify all categories appear"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete share functionality testing",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap share button",
+      "Step 4: Verify share sheet appears",
+      "Step 5: Select Copy",
+      "Step 6: Verify copied to clipboard",
+      "Step 7: Tap share again",
+      "Step 8: Select Share as Image",
+      "Step 9: Choose background style",
+      "Step 10: Verify preview shows styled image",
+      "Step 11: Save to Photos",
+      "Step 12: Verify image saved successfully"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete streak milestone celebration flow",
+    "steps": [
+      "Step 1: Use app for 6 consecutive days",
+      "Step 2: Verify streak shows 6",
+      "Step 3: Open app on day 7",
+      "Step 4: View an affirmation",
+      "Step 5: Verify celebration animation triggers",
+      "Step 6: Verify milestone message appears",
+      "Step 7: Verify haptic feedback occurs",
+      "Step 8: Dismiss celebration",
+      "Step 9: Open Stats view",
+      "Step 10: Verify streak shows 7",
+      "Step 11: Verify longest streak updated"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete journaling feature workflow",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap journal/reflect button",
+      "Step 4: Verify journal screen opens",
+      "Step 5: Verify affirmation shown as prompt",
+      "Step 6: Type reflection text (100 chars)",
+      "Step 7: Tap save",
+      "Step 8: Verify success feedback",
+      "Step 9: Close journal",
+      "Step 10: Reopen journal for same affirmation",
+      "Step 11: Verify previous entry displayed",
+      "Step 12: Edit entry and save again"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete mood tracking integration",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: View an affirmation",
+      "Step 3: Tap mood selector",
+      "Step 4: View available mood options",
+      "Step 5: Select 'Happy' mood",
+      "Step 6: Verify mood logged",
+      "Step 7: View another affirmation",
+      "Step 8: Select 'Calm' mood",
+      "Step 9: Navigate to Stats view",
+      "Step 10: Find mood tracking section",
+      "Step 11: Verify mood data displayed",
+      "Step 12: Verify mood trends visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Complete Dynamic Type accessibility testing",
+    "steps": [
+      "Step 1: Set device text to smallest size",
+      "Step 2: Open app and verify readability",
+      "Step 3: Navigate through all screens",
+      "Step 4: Verify no layout breaks",
+      "Step 5: Set device text to largest size",
+      "Step 6: Open app and verify readability",
+      "Step 7: Navigate through all screens",
+      "Step 8: Verify text scales appropriately",
+      "Step 9: Enable accessibility text sizes",
+      "Step 10: Set to maximum accessibility size",
+      "Step 11: Verify app remains usable",
+      "Step 12: Verify scrolling works for overflow"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Upgrade to Pro banner visible on Home screen",
+    "steps": [
+      "Step 1: Launch app",
+      "Step 2: Navigate to Home screen",
+      "Step 3: Verify Upgrade to Pro banner is visible at top",
+      "Step 4: Verify crown icon is displayed",
+      "Step 5: Verify banner is tappable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Upgrade to Pro banner visible in Settings",
+    "steps": [
+      "Step 1: Navigate to Settings tab",
+      "Step 2: Verify Upgrade to Pro banner is first section",
+      "Step 3: Verify gold styling on banner",
+      "Step 4: Verify chevron indicates tappable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Paywall displays when tapping upgrade banner",
+    "steps": [
+      "Step 1: Tap Upgrade to Pro banner",
+      "Step 2: Verify PaywallView sheet appears",
+      "Step 3: Verify subscription options displayed",
+      "Step 4: Verify close button available"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Paywall shows weekly subscription option",
+    "steps": [
+      "Step 1: Open PaywallView",
+      "Step 2: Verify weekly plan displayed",
+      "Step 3: Verify price shown as bash.29/week",
+      "Step 4: Verify subscribe button for weekly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Paywall shows monthly subscription option",
+    "steps": [
+      "Step 1: Open PaywallView",
+      "Step 2: Verify monthly plan displayed",
+      "Step 3: Verify price shown as bash.99/month",
+      "Step 4: Verify subscribe button for monthly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Paywall lists Pro features",
+    "steps": [
+      "Step 1: Open PaywallView",
+      "Step 2: Verify unlimited favorites feature listed",
+      "Step 3: Verify unlimited custom affirmations listed",
+      "Step 4: Verify all themes unlocked listed",
+      "Step 5: Verify iCloud sync listed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Free tier limits favorites to 3",
+    "steps": [
+      "Step 1: Ensure not subscribed",
+      "Step 2: Favorite 3 affirmations",
+      "Step 3: Try to favorite 4th affirmation",
+      "Step 4: Verify paywall appears",
+      "Step 5: Verify cannot add more without Pro"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Free tier limits custom affirmations to 3",
+    "steps": [
+      "Step 1: Ensure not subscribed",
+      "Step 2: Create 3 custom affirmations",
+      "Step 3: Try to create 4th",
+      "Step 4: Verify paywall appears"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Pro status shows confirmation badge",
+    "steps": [
+      "Step 1: Subscribe to Pro",
+      "Step 2: Navigate to Home",
+      "Step 3: Verify Pro Active badge replaces upgrade banner",
+      "Step 4: Verify checkmark seal icon displayed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Restore purchases button works",
+    "steps": [
+      "Step 1: Open PaywallView",
+      "Step 2: Tap Restore Purchases",
+      "Step 3: Verify StoreKit restore initiated",
+      "Step 4: Verify feedback on completion"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Home screen uses coral mesh gradient background",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Verify animated mesh gradient visible",
+      "Step 3: Verify coral/orange color scheme",
+      "Step 4: Verify gradient animates subtly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Cards have golden glow effect",
+    "steps": [
+      "Step 1: View card on Home",
+      "Step 2: Verify golden border visible",
+      "Step 3: Verify glow shadow effect",
+      "Step 4: Verify glow color is #FFD93D"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Tab bar uses SF Symbols correctly",
+    "steps": [
+      "Step 1: View tab bar",
+      "Step 2: Verify house icon for Home",
+      "Step 3: Verify heart icon for Favorites",
+      "Step 4: Verify grid icon for Categories",
+      "Step 5: Verify plus icon for Create",
+      "Step 6: Verify gear icon for Settings"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Selected tab uses coral accent color",
+    "steps": [
+      "Step 1: Tap Home tab",
+      "Step 2: Verify Home icon is coral colored",
+      "Step 3: Tap Favorites tab",
+      "Step 4: Verify Favorites icon is coral colored"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Category badges use pill shape",
+    "steps": [
+      "Step 1: View affirmation card",
+      "Step 2: Verify category badge is pill shaped",
+      "Step 3: Verify rounded corners on badge",
+      "Step 4: Verify badge text is readable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Buttons have 44pt minimum touch targets",
+    "steps": [
+      "Step 1: Inspect all buttons",
+      "Step 2: Verify share button >= 44pt",
+      "Step 3: Verify favorite button >= 44pt",
+      "Step 4: Verify tab bar items >= 44pt"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Typography uses SF Pro Rounded consistently",
+    "steps": [
+      "Step 1: Check card text font",
+      "Step 2: Check title fonts",
+      "Step 3: Check button fonts",
+      "Step 4: Verify consistent font family"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Spacing follows Fibonacci scale",
+    "steps": [
+      "Step 1: Check padding values",
+      "Step 2: Verify 8pt, 13pt, 21pt, 34pt used",
+      "Step 3: Verify no non-Fibonacci values"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Corner radii follow design system",
+    "steps": [
+      "Step 1: Check card corner radius",
+      "Step 2: Verify 13pt or 21pt used",
+      "Step 3: Check button corner radius",
+      "Step 4: Verify consistent radii"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Empty states have illustrations",
+    "steps": [
+      "Step 1: Clear all favorites",
+      "Step 2: Navigate to Favorites",
+      "Step 3: Verify empty state illustration",
+      "Step 4: Verify helpful message displayed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Loading states show appropriate indicators",
+    "steps": [
+      "Step 1: Trigger loading state",
+      "Step 2: Verify spinner or skeleton shown",
+      "Step 3: Verify indicator matches app style"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Error states styled appropriately",
+    "steps": [
+      "Step 1: Trigger error condition",
+      "Step 2: Verify error message styled",
+      "Step 3: Verify retry option available"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Pressed button states visible",
+    "steps": [
+      "Step 1: Press and hold button",
+      "Step 2: Verify visual feedback",
+      "Step 3: Verify opacity or scale change"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Focus states on text inputs",
+    "steps": [
+      "Step 1: Tap text input",
+      "Step 2: Verify focus ring or highlight",
+      "Step 3: Verify cursor visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Scroll indicators match theme",
+    "steps": [
+      "Step 1: Scroll content",
+      "Step 2: Verify scroll indicator visible",
+      "Step 3: Verify indicator color matches theme"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Favorites persist after app restart",
+    "steps": [
+      "Step 1: Favorite an affirmation",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Navigate to Favorites",
+      "Step 5: Verify favorite still saved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Custom affirmations persist after restart",
+    "steps": [
+      "Step 1: Create custom affirmation",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Navigate to Create",
+      "Step 5: Verify custom affirmation exists"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Streak data persists after restart",
+    "steps": [
+      "Step 1: Build streak",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Check Stats",
+      "Step 5: Verify streak preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Selected categories persist",
+    "steps": [
+      "Step 1: Select specific categories",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Verify categories still selected"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification settings persist",
+    "steps": [
+      "Step 1: Configure notification time",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Check Settings",
+      "Step 5: Verify time preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Theme preference persists",
+    "steps": [
+      "Step 1: Change theme to dark",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Verify dark theme active"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Journal entries persist",
+    "steps": [
+      "Step 1: Write journal entry",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Open journal",
+      "Step 5: Verify entry preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Mood logs persist",
+    "steps": [
+      "Step 1: Log mood",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Check Stats",
+      "Step 5: Verify mood data preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Onboarding completion persists",
+    "steps": [
+      "Step 1: Complete onboarding",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Verify Home screen shown directly"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "View history persists",
+    "steps": [
+      "Step 1: View multiple affirmations",
+      "Step 2: Force quit app",
+      "Step 3: Relaunch app",
+      "Step 4: Check Stats",
+      "Step 5: Verify view count preserved"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Swipe velocity affects card animation",
+    "steps": [
+      "Step 1: Swipe card slowly",
+      "Step 2: Observe animation speed",
+      "Step 3: Swipe card quickly",
+      "Step 4: Verify faster animation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Long press on card shows options",
+    "steps": [
+      "Step 1: Long press affirmation card",
+      "Step 2: Verify context menu appears",
+      "Step 3: Verify share option",
+      "Step 4: Verify favorite option"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Pull to refresh on Favorites",
+    "steps": [
+      "Step 1: Navigate to Favorites",
+      "Step 2: Pull down to refresh",
+      "Step 3: Verify refresh indicator",
+      "Step 4: Verify list updates"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Pinch to zoom on card text",
+    "steps": [
+      "Step 1: View affirmation card",
+      "Step 2: Pinch to zoom text",
+      "Step 3: Verify text scales",
+      "Step 4: Release to reset"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Swipe between tabs",
+    "steps": [
+      "Step 1: On Home tab",
+      "Step 2: Swipe left",
+      "Step 3: Verify moves to next tab",
+      "Step 4: Swipe right to go back"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Drag to reorder favorites",
+    "steps": [
+      "Step 1: Navigate to Favorites",
+      "Step 2: Enter edit mode",
+      "Step 3: Drag favorite to new position",
+      "Step 4: Verify order changed"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Shake to shuffle cards",
+    "steps": [
+      "Step 1: Navigate to Home",
+      "Step 2: Shake device",
+      "Step 3: Verify cards shuffle",
+      "Step 4: Verify new affirmation shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Three finger tap for accessibility",
+    "steps": [
+      "Step 1: Enable accessibility",
+      "Step 2: Three finger tap",
+      "Step 3: Verify accessibility menu"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Edge swipe for back navigation",
+    "steps": [
+      "Step 1: Navigate to detail view",
+      "Step 2: Swipe from left edge",
+      "Step 3: Verify back navigation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Two finger scroll for fast navigation",
+    "steps": [
+      "Step 1: Open long list",
+      "Step 2: Two finger scroll",
+      "Step 3: Verify fast scrolling"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic on successful favorite",
+    "steps": [
+      "Step 1: Favorite affirmation",
+      "Step 2: Verify success haptic",
+      "Step 3: Verify haptic is medium impact"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic on card swipe completion",
+    "steps": [
+      "Step 1: Swipe card fully",
+      "Step 2: Verify light haptic",
+      "Step 3: Verify timing matches animation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic on button press",
+    "steps": [
+      "Step 1: Tap primary button",
+      "Step 2: Verify selection haptic",
+      "Step 3: Verify consistent across buttons"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptic on streak milestone",
+    "steps": [
+      "Step 1: Reach streak milestone",
+      "Step 2: Verify celebration haptic",
+      "Step 3: Verify strong impact"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Text-to-speech reads affirmation clearly",
+    "steps": [
+      "Step 1: Tap audio button",
+      "Step 2: Verify speech starts",
+      "Step 3: Verify clear pronunciation",
+      "Step 4: Verify appropriate pace"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Audio respects silent mode",
+    "steps": [
+      "Step 1: Enable silent mode",
+      "Step 2: Tap audio button",
+      "Step 3: Verify no audio plays"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Audio volume follows system",
+    "steps": [
+      "Step 1: Set system volume low",
+      "Step 2: Play affirmation audio",
+      "Step 3: Verify volume matches system"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Haptics respect system settings",
+    "steps": [
+      "Step 1: Disable haptics in Settings",
+      "Step 2: Perform haptic action",
+      "Step 3: Verify no haptic feedback"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Search affirmations by keyword",
+    "steps": [
+      "Step 1: Open search",
+      "Step 2: Type keyword",
+      "Step 3: Verify matching affirmations shown",
+      "Step 4: Verify real-time filtering"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Search highlights matching text",
+    "steps": [
+      "Step 1: Search for word",
+      "Step 2: View results",
+      "Step 3: Verify matching text highlighted"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Search history saved",
+    "steps": [
+      "Step 1: Search for term",
+      "Step 2: Close search",
+      "Step 3: Reopen search",
+      "Step 4: Verify recent searches shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Clear search history",
+    "steps": [
+      "Step 1: Open search",
+      "Step 2: View recent searches",
+      "Step 3: Tap clear history",
+      "Step 4: Verify history cleared"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Filter by multiple categories",
+    "steps": [
+      "Step 1: Open category filter",
+      "Step 2: Select multiple categories",
+      "Step 3: Verify combined results"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Filter by date range",
+    "steps": [
+      "Step 1: Open date filter",
+      "Step 2: Select date range",
+      "Step 3: Verify filtered results"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Sort favorites by multiple criteria",
+    "steps": [
+      "Step 1: Open sort options",
+      "Step 2: Select sort by date",
+      "Step 3: Verify sorted order",
+      "Step 4: Change to alphabetical",
+      "Step 5: Verify new order"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Filter shows result count",
+    "steps": [
+      "Step 1: Apply filter",
+      "Step 2: Verify result count displayed",
+      "Step 3: Change filter",
+      "Step 4: Verify count updates"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification shows affirmation preview",
+    "steps": [
+      "Step 1: Receive notification",
+      "Step 2: View notification",
+      "Step 3: Verify affirmation text visible",
+      "Step 4: Verify category shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification actions available",
+    "steps": [
+      "Step 1: Long press notification",
+      "Step 2: Verify favorite action",
+      "Step 3: Verify share action",
+      "Step 4: Verify dismiss action"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Multiple notification times supported",
+    "steps": [
+      "Step 1: Open Settings",
+      "Step 2: Add second notification time",
+      "Step 3: Verify both times saved",
+      "Step 4: Verify both notifications fire"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification sound customizable",
+    "steps": [
+      "Step 1: Open notification settings",
+      "Step 2: Select custom sound",
+      "Step 3: Verify sound saved",
+      "Step 4: Verify sound plays on notification"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Weekend notifications toggle",
+    "steps": [
+      "Step 1: Open Settings",
+      "Step 2: Toggle weekend notifications",
+      "Step 3: Verify setting saved",
+      "Step 4: Verify weekend behavior"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Notification category filtering",
+    "steps": [
+      "Step 1: Open notification settings",
+      "Step 2: Select specific categories",
+      "Step 3: Verify only those categories in notifications"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Snooze notification option",
+    "steps": [
+      "Step 1: Receive notification",
+      "Step 2: Swipe for snooze",
+      "Step 3: Select snooze duration",
+      "Step 4: Verify notification returns later"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Weekly summary available",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View weekly summary",
+      "Step 3: Verify affirmations viewed count",
+      "Step 4: Verify favorites added count"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Monthly trends displayed",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View monthly trends",
+      "Step 3: Verify chart shows activity",
+      "Step 4: Verify trend direction indicated"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Category breakdown chart",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View category breakdown",
+      "Step 3: Verify pie or bar chart",
+      "Step 4: Verify percentages shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Time of day analysis",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View time analysis",
+      "Step 3: Verify peak usage times shown",
+      "Step 4: Verify morning/evening breakdown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Mood correlation insights",
+    "steps": [
+      "Step 1: Log moods over time",
+      "Step 2: Open Stats",
+      "Step 3: View mood insights",
+      "Step 4: Verify category-mood correlation"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Achievement badges displayed",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View achievements",
+      "Step 3: Verify earned badges shown",
+      "Step 4: Verify locked badges visible"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Progress toward next milestone",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: View milestone progress",
+      "Step 3: Verify progress bar",
+      "Step 4: Verify next milestone shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Export stats as PDF",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: Tap export",
+      "Step 3: Select PDF format",
+      "Step 4: Verify PDF generated"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Share stats to social media",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: Tap share",
+      "Step 3: Select social platform",
+      "Step 4: Verify stats image shared"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Compare with previous period",
+    "steps": [
+      "Step 1: Open Stats",
+      "Step 2: Select comparison view",
+      "Step 3: Verify this week vs last week",
+      "Step 4: Verify percentage change shown"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Network error shows retry option",
+    "steps": [
+      "Step 1: Disable network",
+      "Step 2: Trigger network action",
+      "Step 3: Verify error message",
+      "Step 4: Verify retry button"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Invalid input shows validation error",
+    "steps": [
+      "Step 1: Enter invalid text",
+      "Step 2: Try to save",
+      "Step 3: Verify validation error shown",
+      "Step 4: Verify field highlighted"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Storage full handled gracefully",
+    "steps": [
+      "Step 1: Fill device storage",
+      "Step 2: Try to save data",
+      "Step 3: Verify error message",
+      "Step 4: Verify no crash"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Corrupted data recovery",
+    "steps": [
+      "Step 1: Corrupt local data",
+      "Step 2: Launch app",
+      "Step 3: Verify recovery attempted",
+      "Step 4: Verify app functional"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Permission denied handled",
+    "steps": [
+      "Step 1: Deny notification permission",
+      "Step 2: Try to enable notifications",
+      "Step 3: Verify settings redirect offered"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Timeout shows appropriate message",
+    "steps": [
+      "Step 1: Trigger slow operation",
+      "Step 2: Wait for timeout",
+      "Step 3: Verify timeout message",
+      "Step 4: Verify retry option"
+    ],
+    "passes": true
+  },
+  {
+    "category": "functional",
+    "description": "Concurrent modification handled",
+    "steps": [
+      "Step 1: Edit on two devices",
+      "Step 2: Sync changes",
+      "Step 3: Verify conflict resolution",
+      "Step 4: Verify no data loss"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Animations respect reduced motion",
+    "steps": [
+      "Step 1: Enable reduced motion",
+      "Step 2: Navigate app",
+      "Step 3: Verify animations simplified",
+      "Step 4: Verify no jarring motion"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "High contrast mode supported",
+    "steps": [
+      "Step 1: Enable high contrast",
+      "Step 2: View app",
+      "Step 3: Verify increased contrast",
+      "Step 4: Verify text readable"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Bold text setting respected",
+    "steps": [
+      "Step 1: Enable bold text",
+      "Step 2: View app",
+      "Step 3: Verify text is bolder",
+      "Step 4: Verify layout intact"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Grayscale mode compatible",
+    "steps": [
+      "Step 1: Enable grayscale",
+      "Step 2: View app",
+      "Step 3: Verify UI distinguishable",
+      "Step 4: Verify no color-only indicators"
+    ],
+    "passes": true
+  },
+  {
+    "category": "style",
+    "description": "Smart invert colors compatible",
+    "steps": [
+      "Step 1: Enable smart invert",
+      "Step 2: View app",
+      "Step 3: Verify images not inverted",
+      "Step 4: Verify UI usable"
+    ],
+    "passes": true
+  }
+]

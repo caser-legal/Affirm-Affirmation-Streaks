@@ -117,9 +117,9 @@ struct PaywallView: View {
                 }
             }
             HStack(spacing: 13) {
-                Link("Terms", destination: URL(string: "https://lirix-ai.github.io/github.io/#terms")!)
+                Link("Terms", destination: URL(string: "https://apple.caserlegal.com/#terms")!)
                 Text("•").foregroundStyle(.secondary)
-                Link("Privacy", destination: URL(string: "https://lirix-ai.github.io/github.io/#privacy")!)
+                Link("Privacy", destination: URL(string: "https://apple.caserlegal.com/#privacy")!)
             }.font(.caption2).foregroundStyle(AppColors.warmCoral)
         }
     }

@@ -1,0 +1,73 @@
+APP STORE SUBMISSION - AFFIRM
+═══════════════════════════════════════════════════════════════════════════════
+
+SCREENSHOTS REQUIRED
+────────────────────────────────────────────────────────────────────────────────
+iPhone (6.5" Display): 3 screenshots
+  Sizes: 1242×2688px, 2688×1242px, 1284×2778px, or 2778×1284px
+
+iPad (13" Display): 3 screenshots
+  Sizes: 2064×2752px, 2752×2064px, 2048×2732px, or 2732×2048px
+
+APP INFORMATION
+────────────────────────────────────────────────────────────────────────────────
+Name (30 characters max):
+Affirm
+
+Subtitle (30 characters max):
+Daily Positive Affirmations
+
+PROMOTIONAL TEXT (140 characters max)
+────────────────────────────────────────────────────────────────────────────────
+Start your day with powerful affirmations. Swipe through beautiful cards, save favorites, and create your own positive mantras.
+
+DESCRIPTION (4000 characters max)
+────────────────────────────────────────────────────────────────────────────────
+Affirm delivers daily positive affirmations through beautifully designed, swipeable cards that help you cultivate a positive mindset and transform your life.
+
+FEATURES:
+• Swipeable card deck with stunning 3D rotation animations
+• Save your favorite affirmations for quick access
+• 8 categories: Self-Love, Confidence, Gratitude, Success, Health, Relationships, Morning, and Evening
+• Create custom affirmations that resonate with you
+• Beautiful warm coral and orange design with radiant sunburst effects
+• Daily reminders to practice positive thinking
+• Share affirmations with friends and family
+• Widget support for affirmations on your home screen
+
+CATEGORIES:
+Self-Love - Embrace who you are
+Confidence - Build unshakeable self-belief
+Gratitude - Appreciate life's blessings
+Success - Manifest your goals
+Health - Nurture your wellbeing
+Relationships - Strengthen connections
+Morning - Start your day right
+Evening - End with peace
+
+Transform your mindset one affirmation at a time. Research shows that positive affirmations can reduce stress, improve performance, and boost overall wellbeing.
+
+Whether you're new to affirmations or a seasoned practitioner, Affirm provides the perfect companion for your daily practice.
+
+EULA: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Terms & Privacy: https://apple.caserlegal.com/#privacy
+
+KEYWORDS (100 characters max)
+────────────────────────────────────────────────────────────────────────────────
+affirmations,positive,mindset,self-love,confidence,gratitude,wellness,daily,motivation,mantra
+
+SUPPORT URL
+────────────────────────────────────────────────────────────────────────────────
+https://apple.caserlegal.com/#privacy
+
+MARKETING URL
+────────────────────────────────────────────────────────────────────────────────
+https://apple.caserlegal.com
+
+VERSION
+────────────────────────────────────────────────────────────────────────────────
+1.0.0
+
+COPYRIGHT
+────────────────────────────────────────────────────────────────────────────────
+© 2025 Adam Doherty - All Rights Reserved.
