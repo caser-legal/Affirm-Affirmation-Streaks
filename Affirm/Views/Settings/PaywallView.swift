@@ -4,10 +4,10 @@ import StoreKit
 struct PaywallView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var subscriptionManager = SubscriptionManager.shared
-    @AppStorage("isPurchasing") private var isPurchasing = false
+    @State private var isPurchasing = false
     @State private var selectedProduct: Product?
-    @AppStorage("showSuccess") private var showSuccess = false
-    @AppStorage("showError") private var showError = false
+    @State private var showSuccess = false
+    @State private var showError = false
     @State private var eligibleForTrial: [String: Bool] = [:]
     
     var body: some View {

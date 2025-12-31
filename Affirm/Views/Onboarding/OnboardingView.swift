@@ -48,9 +48,9 @@ struct OnboardingView: View {
 struct WelcomeView: View {
     let onContinue: () -> Void
     @State private var logoScale: CGFloat = 0.5
-    @AppStorage("logoOpacity") private var logoOpacity: Double = 0
-    @AppStorage("textOpacity") private var textOpacity: Double = 0
-    @AppStorage("buttonOpacity") private var buttonOpacity: Double = 0
+    @State private var logoOpacity: Double = 0
+    @State private var textOpacity: Double = 0
+    @State private var buttonOpacity: Double = 0
     @State private var glowPulse: CGFloat = 1.0
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     
