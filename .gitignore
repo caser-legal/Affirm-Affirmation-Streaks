@@ -28,3 +28,7 @@ Carthage/Build/
 .DS_Store
 *.swp
 *~
+.kiro
+.gemini
+.codex
+.claude
