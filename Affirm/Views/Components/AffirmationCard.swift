@@ -3,7 +3,7 @@ import SwiftUI
 struct AffirmationCard: View {
     let affirmation: Affirmation
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @StateObject private var speechManager = SpeechManager.shared
+    @State private var speechManager = SpeechManager.shared
     @State private var showJournal = false
     
     private var cardHeight: CGFloat {
@@ -126,7 +126,7 @@ struct CategoryBadge: View {
 
 struct AudioButton: View {
     let text: String
-    @StateObject private var speechManager = SpeechManager.shared
+    @State private var speechManager = SpeechManager.shared
     
     var body: some View {
         Button(action: { speechManager.speak(text) }) {
@@ -143,7 +143,7 @@ struct AudioButton: View {
 struct ShareButton: View {
     let text: String
     let category: AffirmationCategory
-    @AppStorage("showShareOptions") private var showShareOptions = false
+    @State private var showShareOptions = false
     
     var body: some View {
         Button(action: { showShareOptions = true }) {

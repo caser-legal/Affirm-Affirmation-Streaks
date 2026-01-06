@@ -85,6 +85,9 @@ class SubscriptionManager {
     }
     
     func isEligibleForTrial(_ product: Product) async -> Bool {
+        // App Store Review Fix: Weekly plan should not show free trial text
+        if product.id.contains("weekly") { return false }
+        
         guard let subscription = product.subscription else { return false }
         return await subscription.isEligibleForIntroOffer
     }

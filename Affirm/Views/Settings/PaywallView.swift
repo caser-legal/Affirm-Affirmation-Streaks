@@ -20,7 +20,7 @@ struct PaywallView: View {
                         headerSection
                         featuresSection
                         productsSection
-                        legalSection
+                        subscriptionLegalInfo
                         restoreSection
                     }.padding()
                 }
@@ -94,7 +94,7 @@ struct PaywallView: View {
                 } label: {
                     HStack {
                         if isPurchasing { ProgressView().tint(.white) }
-                        else { Text(selectedProduct != nil && eligibleForTrial[selectedProduct!.id] == true ? "Start Free Trial" : "Subscribe").fontWeight(.semibold) }
+                        else { Text(selectedProduct != nil && eligibleForTrial[selectedProduct!.id] == true && selectedProduct?.subscription?.introductoryOffer?.paymentMode == .freeTrial ? "Start Free Trial" : "Subscribe").fontWeight(.semibold) }
                     }
                     .frame(maxWidth: .infinity).frame(height: 50)
                     .background(selectedProduct != nil ? AppColors.warmCoral : Color.gray, in: RoundedRectangle(cornerRadius: 13))
@@ -136,6 +136,41 @@ struct PaywallView: View {
         } label: { Text("Restore Purchases").font(.subheadline).foregroundStyle(AppColors.warmCoral) }
         .disabled(isPurchasing).padding(.bottom, 21)
     }
+
+    // MARK: - Subscription Legal Info (App Store Required)
+    private var subscriptionLegalInfo: some View {
+        VStack(spacing: 8) {
+            if let product = selectedProduct {
+                let periodText = subscriptionPeriodText(for: product)
+                Text("\(product.displayPrice)\(periodText). Auto-renews until cancelled.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+            
+            HStack(spacing: 12) {
+                Link("Terms of Use", destination: URL(string: "https://apple.caserlegal.com/#terms")!)
+                Text("•").foregroundStyle(.secondary)
+                Link("Privacy Policy", destination: URL(string: "https://apple.caserlegal.com/#privacy")!)
+                Text("•").foregroundStyle(.secondary)
+                Link("EULA", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
+            }
+            .font(.caption2)
+            .foregroundStyle(.secondary)
+        }
+    }
+    
+    private func subscriptionPeriodText(for product: Product) -> String {
+        guard let period = product.subscription?.subscriptionPeriod else { return "" }
+        switch period.unit {
+        case .day: return period.value == 1 ? " per day" : " per \(period.value) days"
+        case .week: return period.value == 1 ? " per week" : " per \(period.value) weeks"
+        case .month: return period.value == 1 ? " per month" : " per \(period.value) months"
+        case .year: return period.value == 1 ? " per year" : " per \(period.value) years"
+        @unknown default: return ""
+        }
+    }
+
 }
 
 struct FeatureRow: View {

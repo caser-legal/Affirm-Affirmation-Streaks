@@ -1,10 +1,11 @@
 import Foundation
 import UserNotifications
 import SwiftUI
+import Observation
 
-@MainActor class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterDelegate {
+@Observable @MainActor class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     static let shared = NotificationManager()
-    @Published var pendingAffirmationID: UUID?
+    var pendingAffirmationID: UUID?
     
     override init() {
         super.init()

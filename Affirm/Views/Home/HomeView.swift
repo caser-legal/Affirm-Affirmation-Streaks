@@ -3,7 +3,7 @@ import SwiftData
 
 struct HomeView: View {
     @Environment(\.modelContext) private var modelContext
-    @EnvironmentObject private var notificationManager: NotificationManager
+    @Environment(NotificationManager.self) private var notificationManager
     @Query private var allAffirmations: [Affirmation]
     @Query(filter: #Predicate<Affirmation> { $0.isFavorite }) private var favorites: [Affirmation]
     @Query private var stats: [UserStats]

@@ -1,10 +1,11 @@
 import AVFoundation
+import Observation
 
-@MainActor
-class SpeechManager: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
+@Observable @MainActor
+class SpeechManager: NSObject, AVSpeechSynthesizerDelegate {
     static let shared = SpeechManager()
     private let synthesizer = AVSpeechSynthesizer()
-    @Published var isSpeaking = false
+    var isSpeaking = false
     
     override init() {
         super.init()

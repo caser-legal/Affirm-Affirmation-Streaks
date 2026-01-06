@@ -53,43 +53,5 @@ extension View {
     }
 }
 
-// MARK: - Keyboard Shortcuts View (iPad)
-struct KeyboardShortcutsView: View {
-    @Binding var selectedTab: Int
-    @Binding var showCommandPalette: Bool
-    let tabCount: Int
-    
-    var body: some View {
-        Group {
-            if tabCount >= 1 { Button("") { selectedTab = 0 }.keyboardShortcut("1", modifiers: .command).hidden() }
-            if tabCount >= 2 { Button("") { selectedTab = 1 }.keyboardShortcut("2", modifiers: .command).hidden() }
-            if tabCount >= 3 { Button("") { selectedTab = 2 }.keyboardShortcut("3", modifiers: .command).hidden() }
-            if tabCount >= 4 { Button("") { selectedTab = 3 }.keyboardShortcut(",", modifiers: .command).hidden() }
-            Button("") { showCommandPalette = true }.keyboardShortcut("k", modifiers: .command).hidden()
-        }
-    }
-}
-
-// MARK: - Sidebar Resize Handle (iPad)
-struct SidebarResizeHandle: View {
-    @Binding var width: CGFloat
-    @GestureState private var isDragging = false
-    
-    var body: some View {
-        Rectangle()
-            .fill(Color.gray.opacity(isDragging ? 0.5 : 0.001))
-            .frame(width: 6)
-            .contentShape(Rectangle())
-            .gesture(
-                DragGesture()
-                    .updating($isDragging) { _, state, _ in state = true }
-                    .onChanged { value in
-                        let newWidth = width + value.translation.width
-                        width = min(max(200, newWidth), 400)
-                    }
-            )
-    }
-}
-
 // MARK: - MainView Alias
 typealias MainView = HomeView

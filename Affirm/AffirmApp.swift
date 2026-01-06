@@ -5,8 +5,8 @@ import SwiftData
 struct AffirmApp: App {
     let container: ModelContainer
     @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
-    @StateObject private var notificationManager = NotificationManager.shared
-    @StateObject private var iCloudSync = iCloudSyncManager.shared
+    @State private var notificationManager = NotificationManager.shared
+    @State private var iCloudSync = iCloudSyncManager.shared
     
     init() {
         do {
@@ -33,7 +33,7 @@ struct AffirmApp: App {
         WindowGroup {
             ContentView()
                 .modelContainer(container)
-                .environmentObject(notificationManager)
+                .environment(notificationManager)
                 .onAppear {
                     notificationManager.clearNotifications()
                 }

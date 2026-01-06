@@ -7,12 +7,13 @@
 
 import Foundation
 import SwiftUI
+import Observation
 
-@MainActor class iCloudSyncManager: ObservableObject {
+@Observable @MainActor class iCloudSyncManager {
     static let shared = iCloudSyncManager()
     private let store = NSUbiquitousKeyValueStore.default
     
-    @Published var lastSyncDate: Date?
+    var lastSyncDate: Date?
     
     private init() {
         NotificationCenter.default.addObserver(
